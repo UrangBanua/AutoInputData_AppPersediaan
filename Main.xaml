@@ -1,0 +1,964 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,14135" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="37">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="799,14070" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="tblData" />
+      <Variable x:TypeArguments="sd:DataTable" Name="tblLogin" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="757,533" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="376,306" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[tblLogin]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Login" WorkbookPath="ParamInput.xlsx" />
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[tblData]" DisplayName="Read_Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Penerimaan" WorkbookPath="ParamInput.xlsx" />
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" Buttons="Ok" Caption="Pesan Error" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[exception.Message]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence sap:VirtualizedContainerService.HintSize="376,378" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_6" Text="[&quot;ParamLogin : &quot;+CStr(tblLogin.RowCount)]" />
+          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;Data Penerimaan : &quot;+CStr(tblData.RowCount)]" />
+          <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:01:00" Buttons="Ok" Caption="Info" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;ParamLogin : &quot;+CStr(tblLogin.RowCount)]" />
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblLogin]" DisplayName="For Each Row in Login" sap:VirtualizedContainerService.HintSize="757,13405" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="723,13285" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:OpenBrowser Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" AutomaticallyDownloadWebDriver="True" BrowserType="Chrome" CommunicationMethod="WebDriver" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="681,5372" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[CurrentRow(&quot;UrlApp&quot;).ToString]">
+              <ui:OpenBrowser.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,5271" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'DIV  O3D_id-innerCt'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="SetFocus_3">
+                      <ui:SetFocus.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="17c640b2-c094-44a3-a886-e04592528605" InformativeScreenshot="9292c77739fee4df53f62f80e74c55a8" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:SetFocus.Target>
+                    </ui:SetFocus>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O59_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[CurrentRow(&quot;Username&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e7c5fd8-b219-406c-8fc6-e3141070b415" InformativeScreenshot="9292c77739fee4df53f62f80e74c55a8" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DeselectAfter="False" DisplayName="Type Into 'INPUT  O69_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[CurrentRow(&quot;Password&quot;).ToString]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d0e950ce-e0be-494f-a1b3-079623aae108" InformativeScreenshot="33c14c4d10e5e90343151c6d0ddc7ce6" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT  O69_id-inputEl'" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="%[k(enter)]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d50a2a5-5078-4eb9-a88e-cd50ea28f8e2" InformativeScreenshot="33c14c4d10e5e90343151c6d0ddc7ce6" Selector="&lt;webctrl tag='INPUT' type='password' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fff35413-9c17-4414-b7d0-8e4f74d311ab" InformativeScreenshot="19552fc4e24c9fa0af0503733e286a06" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fc5827bd-b5ad-4e88-ac93-37e11ba4e4cd" InformativeScreenshot="7eb4a43d0ad00740e2e5b57fea82a048" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl parentid='treeview-1038-record-27' tag='SPAN' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  O164_id-btnInnerEl'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6738988c-1b81-4479-a4fb-ed7bb17e91e3" InformativeScreenshot="5499d4c04f994da1be05ffb3b0aa5970" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl id='O164_id-btnInnerEl' tag='SPAN' aaname='Pilih Tahun' class='x-btn-inner x-btn-inner-default-small' innertext='Pilih Tahun' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="560,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[CurrentRow(&quot;TahunAnggaran&quot;).ToString+ &quot;[k(enter)]&quot;]">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6761914-63de-4766-b3d1-d7eeb4bab0b0" InformativeScreenshot="0dc4edca04ec3afaf0edcbe66904b534" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl parentid='jconfirm-box*' tag='INPUT' type='text' class='name fs-form-control' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5c934ecd-3eaf-4d11-b51a-1d8bc0b29555" InformativeScreenshot="9dbf7d27f5621f097fee97ec5b964569" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aaname='ok' tag='BUTTON' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  O14C_id-btnInnerEl'" sap:VirtualizedContainerService.HintSize="560,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="12e643ab-cde1-4937-bcc6-784cc10077f5" InformativeScreenshot="02f945e2b1137bb84f2849410af4b2e5" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' id='O140_id-legendTitle' tag='DIV' /&gt;&lt;nav up='2' /&gt;&lt;webctrl id='O14C_id-btnInnerEl' tag='SPAN' aaname='FORM PENERIMAAN' class='x-btn-inner x-btn-inner-default-large' /&gt;" WaitForReady="INTERACTIVE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,3607" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,3488" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Int32" Name="d">
+                                <Variable.Default>
+                                  <Literal x:TypeArguments="x:Int32" />
+                                </Variable.Default>
+                              </Variable>
+                              <Variable x:TypeArguments="x:String" Default="BARU" Name="dKodeBAST" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[CurrentRow(&quot;BastPenerimaan&quot;).ToString = &quot;BARU&quot;]" sap:VirtualizedContainerService.HintSize="484,412" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O3A8_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="BARU">
+                                    <ui:TypeInto.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="70b207ff-f4db-48ca-875a-c6f504e16251" InformativeScreenshot="9efebdc3c7878ec3054d72944ccb2ee8" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='SPAN' aaname='BAST :' class='x-form-item-label-text' innertext='BAST :' parentclass='x-form-item-label-inner x-form-item-label-inner-default' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='INPUT' type='text' aaname='BAST :' aria-role='combobox' class='x-form-field x-form-text x-form-text-default   ' /&gt;" WaitForReady="INTERACTIVE">
+                                        <ui:Target.TimeoutMS>
+                                          <InArgument x:TypeArguments="x:Int32" />
+                                        </ui:Target.TimeoutMS>
+                                      </ui:Target>
+                                    </ui:TypeInto.Target>
+                                  </ui:TypeInto>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O3F1_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[CurrentRow(&quot;Tanggal&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe608e67-5b61-4949-a627-94cb9d66d2a8" InformativeScreenshot="b2b3d80c1fb4ee020048ac5f5436ac84" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl id='O299_id-inputEl' tag='INPUT' type='text' aaname='Tanggal :' aria-role='combobox' class='x-form-field x-form-text x-form-text-default *' name='O299' parentclass='x-form-text-wrap x-form-text-wrap-default*' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O394_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[CurrentRow(&quot;Bidang&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cf6ab331-61db-42d4-b0e9-f970d8f0b4fc" InformativeScreenshot="145c1d6e517a42a5c8cf846f3e7946af" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl id='*_id-inputEl' tag='INPUT' type='text' aaname='Bidang :' aria-role='combobox' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O38A_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="[CurrentRow(&quot;KodeKeg&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a3bf6f96-43c2-43b6-b10c-786e28ff3f93" InformativeScreenshot="fdf108f3e3a465cb2726d85349416a2b" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl id='O232_id-inputEl' tag='INPUT' type='text' aaname='Program Kegiatan :' aria-role='combobox' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  O390_id-input...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[CurrentRow(&quot;Ket&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a8a7938f-193f-48a4-988b-678b27173101" InformativeScreenshot="edbe35bfb0181251717872762d080f03" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='textbox' tag='TEXTAREA' aaname='Keterangan :' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O3F5_id-inputEl'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[CurrentRow(&quot;Faktur&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fd5ee5d8-4916-417d-9926-e0246c40829e" InformativeScreenshot="4009f18708937941714ba50618b2c359" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl id='O29D_id-inputEl' tag='INPUT' type='text' aaname='Tanggal Faktur :' aria-role='combobox' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  O1FE_id-btnIconEl'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86c0d8b2-cc19-4561-873a-20631918d4fc" InformativeScreenshot="d045a26db71e6fae7ee4ed464c46f330" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' id='O1FE_id-btnIconEl' tag='SPAN' class='x-btn-icon-el x-btn-icon-el-default-small  ' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DeselectAfter="False" DisplayName="Type Into 'DIV'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="~">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f634f206-14e0-43be-a45e-3c4b0e54b890" InformativeScreenshot="9bcbe30d9735d1f1840813427bc92517" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aaname=' ' parentid='*' tag='DIV' colName=' ' innertext=' ' tableCol='4' /&gt;&lt;nav up='2' /&gt;&lt;webctrl parentid='*' tag='DIV' aaname=' ' innertext=' ' idx='1' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  button-1108-btnIc...'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c8f4ad25-5883-4417-9a13-cd23fcd30651" InformativeScreenshot="4f3e0e58b882220cc2bc5b934f5e2ed7" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aaname=' ' parentid='*' tag='DIV' innertext=' ' tableCol='4' idx='1' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aria-role='presentation' id='*' tag='SPAN' tableCol='2' class='x-btn-wrap x-btn-wrap-grid-cell-small ' innertext=' ' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  O419_id-inputEl'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" Text="[CurrentRow(&quot;KodeSSH&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="148c0ef1-a9b9-44af-a0eb-11737d5ae7d7" InformativeScreenshot="8b53a95c7c8d8c16fafad4be9e7ef8d1" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' tag='SPAN' aaname='Kode' class='x-column-header-text-inner' innertext='Kode' /&gt;&lt;nav up='5' /&gt;&lt;webctrl aria-role='textbox' tag='INPUT' type='text' class='x-form-field x-form-text x-form-text-default  x-form-empty-field x-form-empty-field-default' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2d4696a1-1aa9-4f82-a44f-16f45e5a555e" InformativeScreenshot="60194fe7639050d1aac58a8be88f55ed" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' tag='SPAN' aaname='Keterangan' class='x-column-header-text-inner' innertext='Keterangan' parentclass='x-column-header-text' /&gt;&lt;nav up='12' /&gt;&lt;webctrl aaname=' ' tag='DIV' tableCol='8' idx='1' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_DOUBLE" DelayBefore="500" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5c9e0cb4-0af6-4f65-82f4-5216b4b79c90" InformativeScreenshot="a0eeb0b41efbbde3e908531c016bab32" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' tag='SPAN' aaname='Qty' class='x-column-header-text-inner' innertext='Qty' parentclass='x-column-header-text' /&gt;&lt;nav up='9' /&gt;&lt;webctrl aaname=' ' tag='DIV' class='x-grid-cell-inner ' tableCol='6' idx='1' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="False" DelayBefore="500" DeselectAfter="False" DisplayName="Type Into 'DIV'" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[CurrentRow(&quot;Banyak&quot;).ToString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6b75a7e6-0165-4138-8003-5f0565d01cae" InformativeScreenshot="12e2a1cffde257bf1259eb679f816dc3" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl aria-role='presentation' tag='SPAN' aaname='Qty' class='x-column-header-text-inner' innertext='Qty' parentclass='x-column-header-text' /&gt;&lt;nav up='9' /&gt;&lt;webctrl aaname=' ' tag='DIV' class='x-grid-cell-inner ' tableCol='6' idx='1' /&gt;" WaitForReady="INTERACTIVE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  O20A_id-btnIconEl'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4fe1c5b2-e6d0-4fb2-9539-496760a454d9" InformativeScreenshot="38d20b9a268cdf45c404e975e070ada5" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='LABEL' aaname='Simpan' class='x-component x-abs-layout-item x-component-default' innertext='Simpan' parentclass='x-autocontainer-innerCt' /&gt;&lt;nav up='1' /&gt;&lt;webctrl aria-role='presentation' tag='SPAN' class='x-btn-icon-el x-btn-icon-el-default-small  ' parentclass='x-btn-button x-btn-button-default-small  x-btn-no-text x-btn-icon x-btn-icon-left x-btn-button-center ' idx='8' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="484,621" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                              <ui:IfElseIf.ConditionBlocks>
+                                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                  <ui:IfElseIfBlock BlockType="If" Condition="[CurrentRow(&quot;AutoPakai&quot;).ToString = &quot;YA&quot;]">
+                                    <ui:IfElseIfBlock.Then>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  button-1006-btnIn...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f64a046e-13dc-40ca-89d1-4657bffb1f7c" InformativeScreenshot="fcd7d914e516a8ad252b59d08d72dd51" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='SPAN' aaname='Yes' innertext='Yes' parentclass='x-btn-button x-btn-button-default-small x-btn-text    x-btn-button-center ' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                      </Sequence>
+                                    </ui:IfElseIfBlock.Then>
+                                  </ui:IfElseIfBlock>
+                                  <ui:IfElseIfBlock BlockType="Else">
+                                    <ui:IfElseIfBlock.Then>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN  button-1006-btnIn...'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition Position="Center">
+                                              <ui:CursorPosition.OffsetX>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetX>
+                                              <ui:CursorPosition.OffsetY>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:CursorPosition.OffsetY>
+                                            </ui:CursorPosition>
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f64a046e-13dc-40ca-89d1-4657bffb1f7c" InformativeScreenshot="fcd7d914e516a8ad252b59d08d72dd51" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;&lt;webctrl tag='SPAN' aaname='No' innertext='No' parentclass='x-btn-button x-btn-button-default-small x-btn-text    x-btn-button-center ' /&gt;">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:Click.Target>
+                                        </ui:Click>
+                                      </Sequence>
+                                    </ui:IfElseIfBlock.Then>
+                                  </ui:IfElseIfBlock>
+                                </sc:BindingList>
+                              </ui:IfElseIf.ConditionBlocks>
+                            </ui:IfElseIf>
+                            <Assign DisplayName="Assign KodeBAST" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[dKodeBAST]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[CurrentRow("BastPenerimaan").ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[CStr(d +1) + &#xA;&quot;. Data Penerimaan Berhasil Disimpan = &quot;+&#xA;dKodeBAST]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ui:OpenBrowser.Body>
+            </ui:OpenBrowser>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="681,7781" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="645,7703" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Transformasi Digital - BPKAD HST" sap:VirtualizedContainerService.HintSize="603,7611" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="9ee2b724-b6da-490c-a93d-a61409db73ae" Version="V1">
+                    <uix:NApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="x:Object">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="569,7395" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'DIV  O3D_id-innerCt'" sap:VirtualizedContainerService.HintSize="527,106" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+                            <ui:SetFocus.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="17c640b2-c094-44a3-a886-e04592528605" InformativeScreenshot="39972ebf788ac52aea30d9a441d557f8" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Transformasi Digital - BPKAD HST - Google Chrome' /&gt;&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:SetFocus.Target>
+                          </ui:SetFocus>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT O59_id-inputEl'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="527,216" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Username&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="1078, 603, 187, 20" ElementType="InputBox" FriendlyName="'INPUT O59_id-inputEl'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="515d9245-12ab-4760-94ea-c2478f9d78bc" ImageBase64="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" InformativeScreenshot="e91abe7e5301410081649637c61b2f0f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="Selector, Image" WaitForReadyArgument="Complete" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT O69_id-inputEl'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="527,216" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Password&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="1078, 606, 187, 20" ElementType="InputBoxPassword" FriendlyName="'INPUT O69_id-inputEl'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='' /&gt;" Guid="ed4b367b-50b1-4fa4-98e0-a225a42d7df6" ImageBase64="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" InformativeScreenshot="8f743e139d40cd50fab0ec14dd63c2aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ClickType="Single" DelayAfter="1" DisplayName="Click 'SPAN O75_id-btnEl'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="1220, 679, 57, 19" FriendlyName="'SPAN O75_id-btnEl'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='O75_id-btnEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='O75_id-btnEl' tag='SPAN' type='' aaname='' /&gt;" Guid="06f911d4-3e68-48eb-bacd-39d9c00ecd82" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAXCAYAAAC4VUe5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ0SURBVFhH5ZhNaxNBGMfnW7R+jhYVL148FATBkx686BdoNYeilWJE6EXBk3gShVCv3q1gDKHFNE3W3UTdpHGz2STEQjRujHl/3P/EXbfpFHvYvGwM/JgdnmeW55fZnWWGzS2/p7nlmMWgXVjfpc0thSRZIcMwqFarUbvdpl6vR/j1+/2pbFEf6kS9hlHk9W++SdHivQTNBw5jScdofgXSMbr+JE6SJFGlUpl6yX+1qB8e8LnxNMllTwXQJiE9mOGVZ3FS0h+pXq/zgRh0HH6Kw0dJf6KbzwfizkxjhiHcbDYPDZ4V4AW/wYxbM72wHuOPgGma1O12OUi0r2elDz94LgatmcaiVS6XjyS5+8P4NQ5PLG5M+qBQp9P5b4AvKxQKwuC4CKcO6NJGjNTiD2Hca+DLqtUq/75NCkX7RufWonQhuEP6V1OY4yXwZY1GQxgcJ7Y4Zvzg+2jrgS9rtVo0DcgQvxOlK4/iZP78JczxCv54j5LgS4UuPtg5MWdvR+ja413hvbyC6bpOo2TtRYKWgtETc3o1TFcfWu+34F5ewfL5PF/RJs3beJbOrL6jyxvbtP9FF+Z4AXxZLpcTBseJLYyZTqmaMMcr4Ms+qyrfQk6K8N4+Fz5/N0J7aU2Y4yXwZUlJFgbHxauISkv3o7Qt5YRxr4EvC72WKZPJULFYnHngGbL2Gs4uCy+4OwH/irs/jN/i8HN2Wc6JiZziiaVSiYNE+9rvfXjBz9lPu09OEMB3zD3Y78AHXkdOTobPyLLZLB+A/aeNH/vwgM+xZ2Tu01Asbljl8OJrmuY8Ku6bT2OLOlEv6kb9oS3572norT9tIEG/AaX4SHhAKb8CAAAAAElFTkSuQmCC" InformativeScreenshot="7a33c9c881e7c811af2d600aa9f053d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DelayBefore="2" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="764, 612, 89, 40" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' aaname='OK' check:text='OK' /&gt;" Guid="e75ba2dc-9998-4ae8-84f4-df1fc5831756" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAAsCAYAAAAHD7SnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVHhe7ZvBasJAFEX7Sa77f3ZT/Ba3Bb/ApZvSlbirC0EQQRfCaybJJDfTTJWqN49wD5yFmYmEU31qIS8m6Cj6AHSiv3182+v7l02mn/IBhpahaUoTPSz2nSjvNw3fRNcr/HmGtkgTvW+zfJyIopNEFJ0kougkEUUniSg6SUTRSSKKThJRdJKIopNEnEbf27q+robT0WY9e+e7sHi2ec/abHMpT82tM0XcRY+hDptt53gV12y96u7PRW+C7/ad40OJ+Iq+OpfXkgaPViEvtly0x/qiewseRFxFLwNmxkhlPXYgZho9904ZWsRR9N9B+0wj42OvwYOIn+iLox2K67gWLBd9GUdKgaLf6l3RK8K58XH6gTu0yEjGC/6x4tfNdo8HkdF9kJbW75q/n4sr4ir6tRFz61fGdq+f+Y74il6YixXHyK0/jibTrS1P5Sku5jviLnplnMvAP/4NgM8zdHjEafTxiSg6SUTRSSKKThJRdJKIopNEFJ0kougkEUUniSg6SUTRSSKKThJpouv2l+eZvf1FN3o9z+yNXoGwqFf84wwt0+CBTnTBQdHpmP0AbM18kXPS8lsAAAAASUVORK5CYII=" InformativeScreenshot="a0e05fc6f01028daefb275de4736d8d6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DelayBefore="3" DisplayName="Click 'PERSEDIAAN'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="58, 560, 66, 13" ElementType="Text" FriendlyName="'PERSEDIAAN'" FullSelectorArgument="&lt;webctrl parentid='treeview-1038-record-27' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='treeview-1038-record-27' tag='SPAN' type='' aaname='PERSEDIAAN' check:text='PERSEDIAAN' /&gt;" Guid="14231fcf-8a3b-4eee-8554-fb1ef69904a9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAARCAYAAABgpdrLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVFhH7VRbjsMgDMwZkXqX/Y64SnqU5CD9yDFYP2IYHEibrvaPqVDLYMx4MJ3SQBPDmA6GMR0MYzoYxnTQNua1pDBNacojprXJ03gsaafP8qj5uEkmxRZhLaTlxeR5j66d+fDcJQ1jnQuPZ+zPQJzlRqwpcvwsFSisDuA4L55zYcxhBkHEcBLHF2gxWagYgWaCYFrTOLcnw/OHURdFaExIcQ6OJ7CWmc5E3YemQHtM11fGSHLujE+NoYhoZny8x9DiIR/PvDF8humTDi7gWM5l3wLTJKapsq+M4U2lY+g3DE3mijEjZaJrvvWRzwOeZSvWOF8EPyOd1wbqXOuQp2Zdl+vjvLp+wxgv2PhiWIEr0t2awmJMeMsARouvubqIizW8INQOv83UG8Y0DHhjjIrzt1ajCLhjzMVTEk1wKXAxHFfxNCRvVYd2Vfx/YwgYR7dWisS4T43Ree/Pt3oiAjPxfEE51tUhPJn2R2PcLfT+F7iNs0CIz0UcBeOaxJ95FIxdELfGuQQxbv45P2mr61SfanxvzMAwpodhTAfDmCZS+gWuQ356h3apvQAAAABJRU5ErkJggg==" InformativeScreenshot="ed61b5aad97cbc5360b06c6747ae17c9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'Pilih Tahun'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="385, 177, 47, 16" ElementType="Text" FriendlyName="'Pilih Tahun'" FullSelectorArgument="&lt;webctrl id='O1B9_id-btnInnerEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O1B9_id-btnInnerEl' tag='SPAN' type='' aaname='Pilih Tahun' check:text='Pilih Tahun' /&gt;" Guid="03ed0bca-c67e-4ad3-b42c-5b5faa77e93c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAUCAYAAAAgCAWkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIiSURBVFhH7ZfNaxNBGMbnf5pTKCwEetHL5tClEE9F2AiKUD1oD/bgbg+5KNTkIAqJXoRQEJESIZNAQHIxlu6aUsFqZb/+h3w+7kw2zWaTpUURZHDg4Z13eN5n5reQQwgkWmQ8HmMymUCGKmBkERkOhxiNRpChChhZRAaDAWQR6ff7YiNDJY7j4Go6Red9A5/OktXB6cdDNLpnK2Yu15/MJkVc18UqMZOCZlWoWQrlZgnt713Uis/BvjI8pjoqx7N+6tWr9nLGvgZtYx0ZmsH6RrjfZ8uelNnfkYDxPG/hkPcCxgwv/3mIR1TBE8ZQ2nyAms1gCJhZP32Qdmsb+ayCfLm9mHdcgS78vA9nVBVK6FNv8w+0POvaNTzcLIG5Nmo7Gkos9DzTcOd+Sn70Xl6J7/vg4gezPZeAyd+Dsa0hoxbBfnCIAqpWU9SKNet9NPcotl58hv/BANWr6MXzrCoKws/7c/Q6TdTfPg0BMyi2otmXR/Dq0azwG2DeF1R1CqNxSX4k3l/AJMUD6N0y6u0jnDv8bAoxg5nXqbfwqge/Mb/sIiuC4T6/U0bu2i4Ouu+wS+cPXZiNYJp+bwEmNT8mEgQBVqnFYfZasbMWTP4oO1mn3sLrEwTMFJedxHICO4IJfYH9BoU1BbktDbkQxmQrZr8dYGct/J2qN6BdT/HE82NKhflrclecJcU9V/ElRCzLgiyS6y9AVKVY/2H+1SURDPALJ2yhm+8ER4cAAAAASUVORK5CYII=" InformativeScreenshot="ec41aaabce7442181798ad51e449aec4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="1" DisplayName="Type Into 'Masukan Tahun Persediaan'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="527,216" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;TahunAnggaran&quot;).ToString]" Version="V1">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="613, 495, 390, 34" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl parentid='jconfirm-box73992' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='jconfirm-box73992' tag='INPUT' type='text' aaname='' /&gt;" Guid="cd4b664b-8473-497b-b5f3-f48fda7056fa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYoAAAAmCAYAAADa19wxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFXSURBVHhe7dgxjsIwFEXR2f/aUFaQDgoooCJVgjx6EbFgpPkb8DnSK0Jc+4r8NAAoCAUApa9QLMvS5nlu0zS10+lkZmYDLXd/GpAWfOqhyIsculwu7X6/t8fjYWZmAy13//l83lvwGYseilQkkcjLbdva6/UyM7OBtq7r3oC0IE049FCkIM/ncz8MwJjSgOML06GHIt+nUhMAxpYWpAmHr1D4NwFAWiAUAPxLKAAoCQUAJaEAoCQUAJSEAoCSUABQEgoASkIBQEkoACgJBQAloQCgJBQAlIQCgJJQAFASCgBKQgFASSgAKAkFACWhAKAkFACUhAKAklAAUBIKAEr/hmKaprau6/sJgFGlBWnCoYdinud2vV7fTwCM6na77U049FAsy7IXJAe2bXv/CsAocvenAWlBmnDooYi8SEVyKN+nzMxsnOXuTwM+IxFfoQCAv4QCgEJrv/2Exums3GpWAAAAAElFTkSuQmCC" InformativeScreenshot="2db08ad1d9f86084a9076e95c609adb2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="613, 476, 165, 14" ElementType="Text" FriendlyName="'Masukan Tahun Persediaan'" FullSelectorArgument="&lt;webctrl parentid='jconfirm-box73992' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='jconfirm-box73992' tag='LABEL' type='' aaname='Masukan Tahun Persediaan' check:text='Masukan Tahun Persediaan' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKkAAAASCAYAAAAg2P6ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANoSURBVGhD7Ze9USRBDIU3I7KAEMDHIAISIACiIAASwMNYD0zAxgQXd66+Kb6td6Jn2OV3rq5flWqmW+qnJ7XYXVZDR8fC0Ye0Y/HoQ9qxePQh7Vg8FjOk19fXw2q1Gs7Ozl53loW7u7thb29vODk5GV5eXl53/x/8Zv2bIX16ehoODg7eDEruf6fAnxhSuMnRsvfy/uQlXVxcvNHHHXAXv4Ws//n5eXyiC63fjeaQZkMcHuxfH1JhrTSd5m+D3xhSe+H6J3JPYVGfpBhCGBpAo/wEUmAOrmY8qJ8EnLu6utq8w5H5eM8hxU+c8be3t2OD5MP8CzYW/+np6cY/N+xTQzpXl5d0dHQ0WvpTr/H2gOeuGj2r39zqzXyYPQTe1eXl5bgvh/ua+7Vm+wpa/SAv+eWr9de4OR+QJ/WlHzSHlAIJvLm5GS+EdR5GmMXUC8/L0Y+AXYZUDmPhPT8/H/lYs4+/NohzrtXTQtUs5urCeK9rcuXXHxwg+7CrRs/SC2Au9Dw+Po5n7VvqgDcvWw731MYZ+mnPrTnjKu9UHmJdowek/jkfkKeu1QqaQ3p/fz8OJ3/1kFqMAiuS2PcaWzkyH+/6takLBBbKEy44M75VaMLcczlA8tRLSv0OTub8jEbPElPX6tBXuSuv/uQTrFMTZ4yrPLX+6k/U2MR7PNk30RxS3rMAxWdSydOIU0Tuk7By1Hz6NfeF4tPYgwtOtYK5BgJz5xnxXl0t/d81pGnEg9onTe4Wb+sM32xqrgZH5an1T/mTx9g5X+XJvonJIU1YJMStr7ZWY4AJ4Vyv138VWfOZIxvEE7hWeBay6wAAc+cZefJc8tRLqvprzs9o9CwxFcRP+cAcL9B/fHw8WmpKVJ5af/rVpC9j68+8OR6QfRMfHlKL8wJMxG8di05B/vOjODnN5xrRapGzFuL6IwMA5M8zlafWlbXgq/3KnHn2q4e0xcUeP81YV1587KERsC93vgv2Wj7X1s++eeZiHdJteMCXDCnEXhh7PPf39zeJTKolnwIwuDKfOSzGWPwPDw/j07OHh4fjkxj0wLXtAABrzTNgri599qD2y7Vn/S/+Ixqt3V5UyEeMJnflbcVaA7DvaeaVC6MXWX/Ns03sNjzWzlNshrSjY6noQ9qxePQh7Vg8+pB2LBzD8AfaF9sD68At5QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NClick ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="870, 561, 45, 32" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl aaname='OK' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='OK' type='button' tag='BUTTON' check:text='OK' /&gt;" Guid="8eac4ed1-c03b-4664-ba24-4d1afee3ac98" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAkCAYAAAAgh9I0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFdSURBVFhH7ZhRasJAFEXdU1ahWzDLEPdQ6hIK+RJdhdAuoB8uQFDoR0sLRvBL4ZUbuMPLECGZpJ3JMBcOkpkJ3DMTFTKRCBKfxO1+l8v1Kj9lKd/n8EAv9ENPHSOBiVDL26CnFjESMGy6IVTQlzESYzkFgr6MkWhaGDpMkvANkyR8wyQJ3zC9Jd73e5nOZpJlmeHpeVVbs95sq3F8cuzj80sWy2U1jk9c63vawPSS2L2+1cpr5nkuh+OpWmdLDCEAGGcJFERRXe7RuJYYSgAwzhI8BfvRAXzEeBqUeCmKwQQA4yyhd9ee427bEhpIQta+twvMv0vg5Hg9yseJaymJsaZNaAvzp19slqaEXsdNoCjHu8A4SwDXn1igT6PpNNvA9JIArn92QN+LDdFzbWB6S/iESRK+YZKEb5gk4RvGSETx8iyK15hRvFBGMAHDUGXQC/20AFKTGGsikBD5BTsUpXdsh6kwAAAAAElFTkSuQmCC" InformativeScreenshot="db7c3d77b0462ef7577d36099edb8bc3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'ok'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="956, 534, 45, 32" ElementType="Button" FriendlyName="'ok'" FullSelectorArgument="&lt;webctrl aaname='ok' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ok' tag='BUTTON' type='button' check:text='ok' /&gt;" Guid="93b65f73-49d9-423a-9410-05479a9b2221" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADEAAAAkCAYAAAAgh9I0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVFhH7ZhPSgMxHEa905zCXsEeQ3oH0WuIrgQ9gKAHcNEDCAouFAVb6MpC5C2+8GtMZTqpJhPywYNO/sD3kulmDlwFqU/ia712y9XKfSwW7v2zPOhFP3raeAkmSi0fQk8r4iUwjG0oFfoqXmIstyDoq3iJ2MLSUZpEbpQmkRulSeRGSZZ4fHp2R9Op67rOczybuZfXtx9rgN8av72793v4rfG+KEkSD/O5O5xMNgQE48yzLiaRKgDKYAlOmhOnxMnp2a/jocQ+BEAZLKFbCF8dUGndhpW4ur7ZiwAogyV0mvYWLIyHEiovtu3ti/LvEoyxV8+je530zBodAuPM2/19Uf70jy1BSdjCdt35xaXfvwvKYAnQbVAkxJ56TAJ0G3btLihJEqCCViB8xbZJALcY29MHJVkiJ0qTyI3SJHKjNIncKF6iio9nVXzGrOKDMmECw1Jl6EU/K0A2JMaaCiSc+wZPpKWmeD8znwAAAABJRU5ErkJggg==" InformativeScreenshot="1f9c30ef9d0a21064b7c31a4bced3e59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NClick ClickType="Single" DelayBefore="1" DisplayName="Click 'FORM PENERIMAAN'" sap:VirtualizedContainerService.HintSize="527,156" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="291, 467, 239, 101" FriendlyName="'FORM PENERIMAAN'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='O1A1_id-btnEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='O1A1_id-btnEl' tag='SPAN' type='' aaname='' check:text='FORM PENERIMAAN' /&gt;" Guid="cfe52794-7f9b-4bd4-8f8d-2a5ee9a40ebe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPMAAABpCAYAAADvCxUaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAApWSURBVHhe7ZzPaxRJG8f7r+ijvJc9mZO5vcIeDHt4g5fAguQiuQUPhr3I7EGCsHgJgweJh2U8LMxBiIcXsiCMsOAelngQ5hB1dNXRmGii5gcx0fzOs/Wt7pqp7q7OJG52nS6+BR9wpqurf9Wn6qlnOgZyhLK/v6/Z29uTnZ0dWVtbk6WlJXn37p28fftW3rx5Qwg5AvAG/sAj+ASv4Jdx7Sjl0DKj4d3dXfn06ZMsLi5SXkL+AeAV/IJn8O0oQneU2Uj8+fNnef/+vfMECCHHD3yDd4eV+kCZ0cD29rYsLy87D0YI+eeBf/Cwk9C5MiNu39ra0vG86wCEkH8PeAgf4WVeccqMHTY3N2VhYcHZMCHk3wc+wss8oTMyG5Hn5+edDRJCvh7wMk/ohMyIyTGVc0YmpHuBn/A0vYZuyWySXR8+fHA2QAjpHuBpOinWkhnp748fPzp3JIR0H/AV3pqiZYbdiMP5IgghxQG+wlszOwf4B+xeWVlx7kAI6V7grXmpRMvMWZmQYmLPzgFS3HjBe25uzlmZENK9wFv4C48D/JUG37kmpLjAX3gcbGxsOCsQQooDPA7W19dldnbWWYEQ0v3AX3gcrK6uUmZCCgz8hccB/ryKyS9Cigv8hccB/rsSVwVCSHGAxwH+ixLXRkJIcYDHAf+wgpDiA48pMyEeQJkJ8QTKTIgnUGZCPIEyE+IJlJkQT6DMhHgCZSbEEygzIZ5AmQnxBMpMiCdQZkI8gTIT4gmUmRBPoMyEeAJlJsQTKDMhnkCZCfEEykyIJ1BmQjyBMhPiCZSZEE+gzIR4AmUmxBMoMyGe4K3M9Rv9EgSBg34Zf2DVuz0qg6dORNv+0yuDlyekPmO3NSmldBvhN9J3viy1hqlTl/Gz2HZayn/Y+1o8GJd+7Ht2XOqu7a7jBKF8892QlO80WvXyryuQ0q/tdsLvK9njxOcQ1VP8WnK2A/pv1FUdc102J6T3XEmq9612dTvt+2rO8fTYVLtOAtNu8lkYmrdHJAz68u9lzNS1PvUsRmSimd0WnUOvlO40M9smL6lj5z6H4uK5zCNSbTSkkaIZ15m6MSBh2Cel6j2pq+/rv1el9F2oRBiXqVZbkRz9Y/fabdyflKvfhxKcGpWartPu9D2Xa/F+SXTHgwwdZE4cpzElkz8NygmrUx54XXoQMoNCKEO/tAcBjVPmfin/lm2roQWJr+titf19/Z5ULvYqiYakOp1sJy1zcNLcnxR/lKVPn6NL5oZUz6vBKAyl54r7XkbUZPSkelZhkL1ORescWs+oDWUuGNHDLMmkY5tmuiKDqsMP30qN3H9OyLDqIIM3TQeJJdMzlVVPixEqyfA56vSnz/SpzuWaKdDxlOgnezrLnD7Om6ZMXFCd74dJ/bnjdcXt6GOFwzLxp7UtR2bX7BgRy3wpOnYbdQx1jwZ+js/VJfO3fdKnhBy5nZ0Za5fVuanz63EdWz8XNcBcU7Nz3mAA7o5KT1iS8pgaJM9VpJHaHt0ndQx13/tSEQJlLhidOn3jl6HcmWPykpp1z6vZSH/OkaxRlaGUzP3XK1razAChOjskL4+pczqyzOp8flCd78KEjigOK3P/9Qkpn1FSq0HARCLHJ3M0OB0os7rOCqSNz7u9LwYCJfm1sjqX7LH1vlrOqF7rXFPgGekoSF9TTjvqPlVvDauQXW23lgWUuWB06vS1H5WwOQ9U7/ttOQ61HZI161JFqHmqJDUrHO2/PhWF04mZQs2sF6OONxV38qPI3LhblgHVqU0o2em6Eu2o2avXXjceh8wzDamNYXkyIBWzn0vm/6mlig6nB6ViwnGFXg9jEL3vknBKD0AmKsIMHl5MDwaK5oSMhD0yehefG1I5p2bfa8nZt32fELZj6dTOIVDmghE9TPXQUhhZDnqgSWEiOdLtnDg7KpOtTmp1ei2MlbzRYWP0WbfbQeb0cZBsG/ip1urQedfVFs4eFJpq0LIGHafMjrZa5xhfV2p7+N9hGf/dij5cMuv7F+3fFs0SzzWjKvlP2/IjlA7UUiG1bGmq2daOqho3B63BNyLxDB9U9IBoIgnKXDCih+lIFMUd48gzcysxVZOrCF8TiS57Bos6rEne6I52JmpLt9tB5mQCLLvezL2u1trYlll9btakdCqQXpxPzsycTYCZ48bX1UqAqYjkgrpv6TVqrszx9RvxrIHNJbNeS7eWNyAK59v5C5C8vxrdrpmpI+xz0J9/RjQRJe0oc8FIP8w0f2fNrENFO5ubkNkKJVNh46Fkto7jotN1Oc/3/yNqhlMS3XLLnAx1bZLXpdGhc29CnINktkPixBIkI3MkbjoK0NiDhxbXUUdhD7DZ+zSlryVUa/gqZS4WHTu97hRfms2OJNWznf6c7vTRzybDl5REVnb7a8kcZcTVAKUzyH83ARblAEJ7Bj1IZoVe+14oyYi6J63sdkrmaIAclmo9FSXcuapC7/ayRQ8IZ65Kza6jqN9Ug3P6Xqfvkx6Iogw3ZS4QnTv9EX9nTkmGdVt7ds52+toVFTKq/ULru+OTufPvzJl2pqsypAYpnFPnMFuhpXDJrEjPzh1kjta+qp3Q+i4hczxAuJJd8cAZrbvtf6fq6QigPVjkPf/alV59DyhzgTiMzOCwb4BlJVOzr1mL5oajjnXcscisjuUgkjS/Hb1ubNVTaAndbUX758hsMsRmdu4kcyxhIs9gyxxHSa7fpIGejbFs0YOClVxMEA0IJiTPff5xDoEyE0K6FspMiCdQZkI8gTIT4gmUmRBPoMyEeAJlJsQTKDMhnkCZCfEEykyIJ1BmQjyBMhPiCZSZEE+gzIR4AmUmxBMoMyGeQJkJ8QTKTIgnUGZCPIEyE+IJlJkQT6DMhHgCZSbEEygzIZ5AmQnxBMpMiCdQZkI8gTIT4gla5sXFRZmbm3NWIIR0P/AXHgdLS0vy+vVrZyVCSPcDf+FxsLy8LK9evXJWIoR0P/AXHgerq6vy8uVLZyVCSPcDf+FxsL6+zpmZkAIDf+FxsLGxob+YnZ3NVCKEdDfGW3gc7Ozs6ExYs9nMVCSEdDfwFv7C42Bvb0/W1ta4biakgMBb+AuPg/39fdnc3JT5+Xl58eKFcwdCSPcBX+Et/IXHWubd3V2dDcNGrp0J6X7gKXyFt/BXyyyqmNl5YWFBnj175tyZENI9wFP4amZlFC0zCuxG7D0zM0OhCeli4Cc8ha/w1pSWzLB7e3tbVlZW9PTN9TMh3YdxE57CVzMro7RkRsGGra0t/Z4n7KfQhHQP8BFewk94aouMkpAZBSluxOH47Qo7MuQm5OtjXISX8BOepktGZhQjNEYAjAaNRoNZbkK+AvAO/sFD+JgnMopTZhTsgKkcsTkW248fP5anT586D0gIOX7gG7yDf/AQPuaJjJIrM4pJiiFrhjT48+fP5eHDh/LkyRN9ANcJEEK+HHgFv+AZfIN38C+d7HKVA2VGQQNIf2N6xw/UeOME74M+evRIpqendQiAWB5/ucFQnJDDA1/gDfyBR/AJXsEveAbf4J15KeTgIvIXcZBtBQdl7usAAAAASUVORK5CYII=" InformativeScreenshot="1940955fb64918900f80ed7123a8d02c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in Penerimaan" sap:VirtualizedContainerService.HintSize="527,5015" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,4894" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Int32" Default="1" Name="d" />
+                                    <Variable x:TypeArguments="x:String" Default="BARU" Name="dKodeBAST" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="451,61" sap2010:WorkflowViewState.IdRef="WriteLine_4" Text="[&quot;BastPenerimaan = &quot;+CurrentRow(&quot;BastPenerimaan&quot;).ToString]" />
+                                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,625" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                                    <ui:IfElseIf.ConditionBlocks>
+                                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                        <ui:IfElseIfBlock BlockType="If" Condition="[CurrentRow(&quot;BastPenerimaan&quot;).ToString = &quot;BARU&quot;]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="376,431" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="False" DisplayName="Type Into 'BAST'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="BARU" Version="V1">
+                                                <uix:NTypeInto.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" ContentHash="iHKG-HFzh0-_9RxdGRcZJA" DesignTimeRectangle="508, 238, 269, 20" ElementType="InputBox" FriendlyName="'BARU'" FullSelectorArgument="&lt;webctrl id='O250_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O250_id-inputEl' tag='INPUT' type='text' aaname='BAST :' /&gt;" Guid="68a6b2b4-6ab0-4db7-9ece-42273f184efa" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAREAAAAYCAYAAADd7MnyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVHhe7dlBboJAFIBhDua6Gy/hnguUG7h05wHceIEa6wm6BYkEEy7QoMK+7ZQHBWaotjiuIP9LvjQUxp1/ZtBRDMMwD0wZkZftGwBYaSLy6r8DQG/SjY/PLyICwI50I89zIgLADhEB8BDpRpZlRASAHenG5XIhIgDsSDfO5/ONiOyWauI4ytHMVtp9f6Nm8n9388caTy3qeyvPvC4sXEdN5mG7HsCg9IhIJwJPS7XWr12vCIn2TGeNRKKJDBEBRke6cTqd+kVkPZ8auw4JgOxM6r/X1hjhISLA6Eg30jTte5yZquddfV+OMlUQjLhc2Yk0kSAiwOhIN5Ik6XmcKa9/QqLvMPTnOuExAkFEgNGRbhyPx54RKXcfVUTky9/uUCrlkUZfo4fm6ucREWDopBtxHN/xYrW8bmNSP9scaTprzPco1a857S883WsAQyPdiKLoznci3R1G82wRjxu7DfPo034muxBg2KQbh8PhRkQA4B/SjTAMiQgAO9KN/X5PRADYkW4EQUBEANiRbvi+T0QA2CEiAB7yKyIAYKOMCMMwjN0o9Q3aKDUyCINDIQAAAABJRU5ErkJggg==" InformativeScreenshot="10599c737fd216d41d732c60886b1681.png" IsResponsive="True" Reference="PsrPQqPvokyy6R7r90WLEA/T_R08CKxW0yErXuDnuLOug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target DesignTimeRectangle="442, 237, 65, 22" ElementType="Text" FriendlyName="'BAST'" FullSelectorArgument="&lt;webctrl id='O250_id-labelEl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O250_id-labelEl' tag='LABEL' type='' aaname='' check:text='BAST :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAaCAYAAADhVZELAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEnSURBVFhH7ZXBDYMwDEWZEakLIVaBDSq1C9BeOwMHpC7hxokBB7sip7ZU/0k+JMEIP5ykImCAFAdIUZwv9xiQomAh18cTUjSQ4gApDpDiACkOVsrYUV1VVOloBlkUbm2cr/tJJmYGarPcmrpxO6ejDRm/xxspXIyMpdD2JsPA0IRxE8ScOlq12OdYXjY27/5NCqRM1J10V3Dxcweo52Lezp8vlMLSTXd+kH0p2zFvHekQ/vhc1k4xx5Yy73kJ9YGZCCUoIWKcvEihlG9TsH30n/O2zLsik6DsMP4nKUtHxDXVCRL2FkpMfZ13y/9IWQ9aU2Qgzs3CsrXtAR0olHKgMyUVmV2xzFJoWtd5poMOKwVAigekOECKA6Q4QIoDS+GAFAdIMRC9AJRmzAag8Z1CAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NTypeInto.Target>
+                                              </uix:NTypeInto>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="334,83" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                      </sc:BindingList>
+                                    </ui:IfElseIf.ConditionBlocks>
+                                  </ui:IfElseIf>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tanggal'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Tanggal&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="508, 237, 149, 20" ElementType="InputBox" FriendlyName="'06/01/2022'" FullSelectorArgument="&lt;webctrl id='O2EE_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O2EE_id-inputEl' tag='INPUT' type='text' aaname='Tanggal :' /&gt;" Guid="0f752b8e-8984-49d4-b377-99a43f635c6e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAYCAYAAADpsF/HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIRSURBVGhD7ZfLSsNAFIbzjIG+jouSV0l37kQQ95FSioq4cOGtFYtLrxvFMX9mkrmk05o2R1T+Dw40Z87MFObjTJIoQoSpJNvZvWAwxKKRjJC+gVfvH5+UjMgBr87nj5SMyEHJiDjw6mz2RMmIHPDq9Pa5Z8nmuUoHuVqYx+4sVD5IVT43j+RPA6+Ob17iki1GqUqSpIrsyCQrIILOJ4FQmJOOTAbCmfnJsNC5hohMjqTF0MytIlN2hUJldd7ZP1YfX4dIA6+m11HJcJBGgkqW4NBa0miKoRUHdVo4LWUtqpV3iWRHmZ0zDAQye1bzzW9vj6X18XWIPPBqcvUakaw8bNslHEkC4XwgZj3mSFriiqHxx2sggd81NXa+L6z/Py3t/TSxPJEBXo0v3zpKhnxz9ZThHjDGmgPcRDJXUhdXrO9IFtQ0xPJECni1N55tINmyfInfhTaQzJPU4l9x6yWLXYm8Kn8eeLU/udtGMn1w9r3Llaa7ZKhpPhoM7XmrJWvXa2J5Igu8Opjed33xd+XAb3PgzldhjS+g2+VAKFkoqZ6/Thi7R7w+lifywKvDk4eYZOYwzbuX12HQPYI8asMupOXUda1uU+cREKAlqRbYq/NEX5Vzx1atQ6RZK1kX0C38TtURiMtu8+/oUTJ0i+26w9aSkl9Jr52MkGVQMiIOJSPiUDIiTksyBkMqKskIkUOpL6a8Li5UqkTRAAAAAElFTkSuQmCC" InformativeScreenshot="e90bffc2e82b3d5d4ed0f739ad032715.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="442, 236, 65, 22" ElementType="Text" FriendlyName="'Tanggal'" FullSelectorArgument="&lt;webctrl id='O2EE_id-labelEl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O2EE_id-labelEl' tag='LABEL' type='' aaname='' check:text='Tanggal :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAaCAYAAADhVZELAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVFhH7ZVdbsMgDIA5Y6RcZw8RV0nfdo30DHvuQ4/hgc2PAbdKtzGo5E9CSsAk+IshBpQGlSKgUhgfn1/YVArDC/GoFIZKEVApAipF4I2k3GFfDdhruO1II8UaA0ZsFo4QM4aBUhK3HRazwH4L98OZUspRVtEW6ibE2W1JY8XCrzbP4fNCknksvqvqX3fXk/sfSTk2F5ue/Tt+WClsgRhnYLmEpV+cnJQIiYyJ4FhYeBsnv8snS8+eXgotIkthcVgZ4fzx1ylxLqVO8LEUP+eMlL/kJSmYVCzrWAE9pFRbblopZbl3rBQ+3zF1peSEPOyseCalGuP7vjgDeFwhkkRMfKaQCCpp6/42J6Q4UGbcBmsrFsdcf34GJU9z6K82j5QO+IVTghUoNoscTWcp/KtXXxIrKo7xihzPv1bKu6BSBFSKgEoR8FJ8UykCKqUB4BsHOWgWNWKUnQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Bidang'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Bidang&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="508, 293, 269, 20" ElementType="InputBox" FriendlyName="'Umum'" FullSelectorArgument="&lt;webctrl id='O291_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O291_id-inputEl' tag='INPUT' type='text' aaname='Bidang :' /&gt;" Guid="c3bda94f-7af4-46e2-807b-c80ef87cc4d7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAREAAAAYCAYAAADd7MnyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFySURBVHhe7djLboJAFIDheUYSX4jwKvgGTfoE2i2XYDBx5cKNctm3TueMo9FarD1sqv2/5CSAM7LiD8FYABjBR+Tl9Y1hGEY1p4gAwG9IN94/9kQEgI50o+97IgJAh4gAGEW60XUdEQGgI91o25aIANCRbjRNMxCReWKNSewsnIpZbGw03YQzAP8dEQEwinRjt9tpIrKx6cTYJJY15rBundrIH7vr86/rHfm/Sep2hutu72F9ZNP1zCZhL5ECHod0Y7vd6iNiYvk1HIdAXMViICIXx8f7+BBd3hPA3yXdWK1WI95E7nnj+OH6ZhqFGDlEBHgo0o3lcjkQkW8eaCIC4Jx0o67rgYi4R1m+UxxDcXl+f0SOgfDHRAR4KtKNxWIxFBHHP9TyzeIwp1DcGZHz/f4jLBEBnop0o6qqGxEBgBukG2VZEhEAOtKNoiiICAAd6Uae50QEgI50I8syIgJAh4gAGOUqIgzDMJrxEQEAHWs/ASMOWYIg/WxmAAAAAElFTkSuQmCC" InformativeScreenshot="8668c12ac948b85b9faa489e449bf80f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="442, 292, 65, 22" ElementType="Text" FriendlyName="'Bidang'" FullSelectorArgument="&lt;webctrl id='O291_id-labelEl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O291_id-labelEl' tag='LABEL' type='' aaname='' check:text='Bidang :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAaCAYAAADhVZELAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVFhH7ZVtDsIgDIY5I4kXWrjKvIGJJ1Dv4Y8do1I+thfWzcXoNrVPQgJYJn0omyFlhEoRUCnA6XwLTaUALIRRKYBKEVApAipF4G1SuqMl01zS6LsZS7m3ZI0hg61PtqP2YMhd0xD4AymW2nsa04WcFyOJQP5MSqwOe+z6fi/o6uSKqubLeEeuyb/h/3j9/Xy1riIcwKH1u/kMz6UUY5RSVtBkpYT1zkd7kqy8JkgoRKa4mWvKbCSlPLEhWdgsJwEbm74+LA+l5MTL5FhQrEZmXsqnWXB98ESXSolxg9gflDIIWCIlxgwJ/mSlYJKw2SIuzo+qiUERM1KwH0VOSylj38/r7xQe8eZCjPVfFN/PcSH5vNZ/bRZIyc/Oz7MotmJ9KbuAK6W6wiuyHylVhU5VyRrstFK2RaUIqBQBlSLAUripFAGVMoLoAa32hT1J4DE5AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="False" DisplayName="Type Into 'Program Kegiatan'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;KodeKeg&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="508, 326, 645, 20" ElementType="InputBox" FriendlyName="'00.00_Non Kegiatan'" FullSelectorArgument="&lt;webctrl id='O287_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O287_id-inputEl' tag='INPUT' type='text' aaname='Program Kegiatan :' /&gt;" Guid="cd52d80f-d21e-4d98-8d11-e4850de17076" ImageBase64="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" InformativeScreenshot="774a51d6b09df38bdffc757ef75f953d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="442, 320, 65, 32" ElementType="Text" FriendlyName="'Program Kegiatan'" FullSelectorArgument="&lt;webctrl id='O287_id-labelEl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O287_id-labelEl' tag='LABEL' type='' aaname='' check:text='Program Kegiatan :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAkCAYAAADfJffWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN/SURBVGhD7ZhdaxpBFIb9jUL+kOyP6H0xd4XQNGkpFFoo2gsVhFwIJhZJIBoSwa/67emcM3N2z4y7dndjrHHzwqC7M7sz55n3zIzmIINar9ewWq1gPp/DZDKBfr8PDw8P8O77CH53/kDmoDCQ5XIJ0+kURqMRPD09wd3dHUF5/7WbXSiLxcJ3SbfbhVar9eYUTJ3xeAy9Xo9c0mg0su0UTJ3ZbAbD4RAeHx+h3W7D1dVVtp3C68lgMKAFFlOnXq9n1ylykeX15ObmBmq1WnadwossQ+l0OnB9fQ3VajXbTpE7D0JpNps+FNspt0XI53KQE8Urm7ojUhSUSqUS4hSCkofirbkuewqMuD4SpXCKhHAPxZMc5E/voVTAzyJ46KCToqpRks7ie0bYfsNx1N6D4mnev3dvvusS9E33C57uD0uhZCbJbpdGydaUCCg4eB2kB2poRkEdiupx4CgaPLcV7QxEhBwqfM7A1bDMOxi+eb/VVwohlPi7jwtFBKedIoIxs+4PLbKtC0U84wrrJRQ/8JJyjOuiyLf8U8nOKTwjfgkGsgHFcoOSCDgZFAxY9BkXipOuSZTsREuDlukT6GWcooFwClL9nqBgCsX77ZMEigxWCes5CHvQIvBQKOHB7gOK3IGifyUngqJE7W3ba2lgnIL5LelDAZp35NVus0+n8LryH/5PsQM6FMkUYrfwP29Ydg9FOkgVf804IEm34IKLawuC+XD2jRzzwk45XMm1BdMIwZyd/6BUyiwUlASDjvl48ZPWmExDQclUOr8skWsCKCG7D221aVd6cWyPVJw2exCD+fS5THAiocizx4vpQKCgEMzFl1/0GQol9CwgdxVZ5+w2fp0MmE68QRu9I+mDnf2cc48nxYzNKwTnmuhdTb8jza6HUFCbUE4xAPuQ5XYUHOb0Qc0/2LkgJDwW9WPev9Up7k+EoJ/tB7idQzEz5HboDp6vZYCoOFBo0HGgaPgBFLHe4XMbE/d8RTvl1hzT5XpCgzDAJLjYUOTRH0s0FHn0x7JvKFjCF1r6LiwYMnhSLChOiqnWUU5x02LfTmGFQ0FRx3zt5qm6JifZ962gHCgWYA7IgUrPWz8E00Bxx5pc0VCUaFvme1Qf2NpaXPneSRgUu43+75UDEmlFbXVAuq1ql8opu4SyA9kz/Xr1bCjaTXK2X7926pRj0RuUDQH8Be8+gmBaY3UCAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Keterangan'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Ket&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="914, 237, 256, 49" ElementType="InputBox" FriendlyName="'-'" FullSelectorArgument="&lt;webctrl aria-role='textbox' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' tag='TEXTAREA' type='' aaname='Keterangan :' /&gt;" Guid="6c9fd9ae-cb7a-4778-861d-b8e2bfb6beb2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQQAAAA1CAYAAACnWZW2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADMSURBVHhe7dZRCcNQEEXBpzEi46BQCXUSGVsI4UApVEAzA/dnBRx2DcDlDMLj+TKzm+8jCMB9CQIQQQAiCEAEAYggABEEIIIA5GcQjn2btda5bT+uK/CvfAhABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEA8hUEM7v3CgLAzMwbePWdN1VhVr8AAAAASUVORK5CYII=" InformativeScreenshot="557c2bca17168905a462a65c186be2f7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="818, 236, 95, 51" ElementType="Text" FriendlyName="'Keterangan'" FullSelectorArgument="&lt;webctrl id='O28D_id-labelEl' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O28D_id-labelEl' tag='LABEL' type='' aaname='' check:text='Keterangan :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGMAAAA3CAYAAAAYJPR0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIdSURBVHhe7ZbbbcMwDEU9o4EsZHgVe4MCnSDpHvnIGKpIUYZEv1r3gWvjHkBAqIct8YhGmkBgoAwgKAOAt/cPbZQBgIgQKAMAygCCMoCgDCAoA4i5jOcQ2qYNw9PiyL1rQnMbwsviGbqmD3cLyTF2ZaiIbifNlPErbMp4je28InQ8CpKmY68w3CzWlqXcQz/rS3P70Z4hkh99sTaOPXSi9fehl8ugYwvVOlvn9lLsPV2q+LyFMc+XLuAfsC5jTMmot5QSnBMmm27HeKRZZaSk6JhEIlUPZ8laS0T5HJNUvmtKkIlKkQnOEgum/dlvf1GW1ghgMmTjC0mTJJR9OfYyVuP1xCUkSbauSrgJtXeXSd6SIWsqGVOC68uCwsZnym5xeUPstlZtVYabtyrD3lPNixyV4fZ4ERn5tztoWRmZRRlFPOFl+KT8sDIW1lxHhqAHzLH/1sZYDyj9xZrZYWPcSSKLxCkuLpO5IaP8Xe1J1kz99R6+I6Oe+3/sy4jo5ly1LH4GtC8nMCUpz0uH8zIimvQ8R/7t7MvIz0nr4u2fnln3992xysCRcTp8VZ6Xc8pw1VlV2om5QGVcB8oAgjKAoAwgKAMIygCCMoCgDCAoAwjKAIIygKAMICgDCMoAgjKAoAwgKAMIygCCMoCgDCAoAwjKAIIygKAMICgDCMoAgjKAoAwgKAMIygCCMoCgDCAoAwiRIY0ygKAMGEL4BM1/mMLphGnoAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TglFaktur'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Faktur&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="914, 340, 239, 20" ElementType="InputBox" FriendlyName="'06/01/2022'" FullSelectorArgument="&lt;webctrl id='O2F2_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O2F2_id-inputEl' tag='INPUT' type='text' aaname='Tanggal Faktur :' /&gt;" Guid="d8746f67-6b05-4558-96a9-988c27d2a4c4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPMAAAAYCAYAAAAvdct+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI1SURBVHhe7ZhLbsIwEIZzxkhcKMpVwg0q9QShWx4CgcSKBRue+7Zu/tiJH8HQBKTK7v9JI5HJOGbzzThJBCEkCmqZ394/GAxG4NHKTAgJE/j7+fVNmQkJHfh7vV4pMyGhQ5kJiQT4e7lcKDMhoQN/z+fzi2XeFSIdFWKvLvuzF8UoFcVOXRJCHgJ/T6eTX+b9OBVJktSRT1SyBsLJfOKIizXpWGUgtlqfZKXMtXikNZpBmam1deRCP6EUeZM39vfV+59DSBw8kBnCKNlqKR05OnJKykwLijoptpS/aQi6SdyQeZLrNZkjqtqzXq9+W3vcrPc/h5BYgL/H49EjcyWVnnqGjI7YNmgAzT2jGVSYAkrs+w2QzT4FSPR6uzHY/1PT3U/iyxMSMvD3cDj0lBn59shahSkS7rWiDJHZbAYmpsC/kdmpafHlCQkb+LvdbgfIfCtfYU/VATJbzUBjH40fy+w7SvOITWIF/m42m2dkloLo92JTzv4yo6b9eKborrsvc7de4ssTEgPwd71e9/0AZkqI30os4yt0gy26ObWBK7PbDOT6R2LqPfz1vjwhsQB/V6uVT2YljXo3tiYmpqGTR607VWUTkHWd6dnkERCt0wxko7DqrIZyL2feu/ccQuIA/i6XS7/MfcD0sydvT9AgOD0JGQT8XSwWr5AZ0++5afd0MyDkHwN/5/P5ayYzIeTvgL+z2YwyExI68Hc6nVJmQkKHMhMSCR2ZGQxG2FHLTAgJHSF+AKQhhYnXg4dZAAAAAElFTkSuQmCC" InformativeScreenshot="3f329aaacceeb94257a20566792214c7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="818, 343, 86, 14" ElementType="Text" FriendlyName="'Tanggal Faktur'" FullSelectorArgument="&lt;webctrl id='O29D_id-labelTextEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O29D_id-labelTextEl' tag='SPAN' type='' aaname='Tanggal Faktur :' check:text='Tanggal Faktur :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAASCAYAAADbo8kDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVFhH7ZZhbsMgDIU5Y6RcKOIq6QV2h/T3ztAfPQbDxoFnQjqSNnSr8qRIJRj7+cPdatypJjpBN9IJupFO0I30D0Df3dgbZ6+yfEZX60w/+oztFUFbY5wpPtZNEvMePQBN4Lb4XQPd4AKWE30bXWc6N95k/Xb9BnrDIPxt0JOe9kHakjg7dHFPwWAIhXMCLu3NtbL3sfEdoLPa8awCGvrqLl+6P7//ffE9Afg7rKeBzozhDMQkhby5340TDU1zHBUVHMqcLsZ7AnoZV64VGqKoJyeafUpMBJ3lVBeQe9Rr8vW45ktAh0IJNMRh0yXjDDqHtg6aztSBhmmkB+oGUQ30ZZ31+eYBYW0Erc5Wqgo0F4JmDgOdgds/0eFMygW+VG5RyW9r0HnRwyY6g0Zn9oEO8QlGPtHkq3DB4LfoX9bHgo7/yMhgBehsj8zNOfCzilPNIax9oGM8xmANro1+IY/KG/LVgwZGoIo/HeHg/BW0NRPtxRck57p+eVm859+nHNIQ74VfM/tAe/F7yTV4z3MMgvYKHmkPagNQ9PJ60Ado1Vw+SR+sg0DjdPonTrMXTpv65ny2mkz0qRN0Izn3A5hsvFn5WadeAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NClick ClickType="Single" DelayAfter="1" DisplayName="Click 'Tambah'" sap:VirtualizedContainerService.HintSize="451,156" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="428, 777, 146, 18" FriendlyName="'SPAN O253_id-btnIconEl'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='O253_id-btnIconEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='O253_id-btnIconEl' tag='SPAN' type='' aaname='' /&gt;" Guid="56d4cca6-5895-4c5f-9216-9eeb07983699" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVDhPrY7NDYMwDEbdY1foAj1w62w9dj+6Bn9hBiDgypaMjHEoEjk8vnx28gQsy4I5yS+c5xlzwsIY42Z4pQMVyzRNu5nmaM9Ce0G6zTN7oDKOIw9TWRaA8f3A7+t+eI9yFQpeFyHlv/tAn2EYuOgUqGuht9cJeqkXZXFjgSBCjX1LQF3XWFUV2oyfJ0uO8N5B0zRcbNq/IYGdee9YaJELghZ6ew20bcsHSsF2LfT2um+EqUwJvYSu67jkyo1QSD04s4cQAh9y5SoUrnbo+56HwrUe8AfeGat+nJ5UUAAAAABJRU5ErkJggg==" InformativeScreenshot="e38c4e76954d597fe90654ccf622b6e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="476, 805, 44, 13" ElementType="Text" FriendlyName="'Tambah'" FullSelectorArgument="&lt;webctrl id='O1CA_id' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O1CA_id' tag='LABEL' type='' aaname='Tambah' check:text='Tambah' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAARCAYAAACb8i8UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhL7ZLNDYMwDIUzYyQWQtmCcxgFzp2BA2O4kNiOk6ISCBWNxJNcify858+pgsr1ANytByBXc69BKQWqHXAlRwOY9Y7SYCdcSoQAdHCjGguzP1SkHwMEDa1v3Iy4cJHuBRiND+cyi/WqEKAb2lvCRguazuILMoAsgtn1lxXDHH+BCZtz4fGEuEnX9AzWQSV77h7tbeR88WdQ8YqZACGQKwrAiSUB0iv9C9G37t377PgXASTT2pxQCcArw/8SADS5BEB65vgXASyii7LOAojijF3/AwC1iQE+JvDn1XWd79v9VqzKAQDeTZJYiSUk+PMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayBefore="1" DisplayName="Type Into 'Supplier'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="-" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="494, 726, 154, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentid='ext-element-76' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ext-element-76' tag='DIV' type='' aaname=' ' /&gt;" Guid="dfd78ec8-26f7-4270-9d6b-d660e318c9da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAYCAYAAAALbES+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACYSURBVGhD7dvBCQMhEIZRq7PH9JIiLGMvNuDFxMAGFrw6c3kPfqYB+W6WMcZsrc11zU7vfmul9z7Nolfm13qFtdbfFtc9dddbWx4PD07aPjyIoHiEUzzSKB7hFI80ikc4xSON4hFO8UijeIRTPNIoHuEUjzSKRzjFI43iEU7xSLMt3l091z11/w9v9xHD7PTK631Ns9hd8wMXTLVhmWVElwAAAABJRU5ErkJggg==" InformativeScreenshot="46f4f58d314ba859a3856181b0b3de63.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                            <uix:Target DesignTimeRectangle="548, 447, 46, 13" ElementType="Text" FriendlyName="'Supplier'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1172-textInnerEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1172-textInnerEl' tag='SPAN' type='' aaname='Supplier' check:text='Supplier' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAARCAYAAACfB/8pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHdSURBVEhL3ZBNUsJAEIX7gAbjbfhJPIYag8cQMKG8g4uUBss1IvKnIMt2emY6aWK0QKhSWHxMet70637AcrnEQwA+FgskFvbc1xroopT5vPye+Wc6zN/f8RD4uyC3pwgACCdX+FSmbwi8zWaY0fWNuaBy1cv1XcKz3CY+zmL09Twfu2Vv1yAPEnvGuBGbejpdebjzmufpICX6hjVMJxOcKdKmo42dZqprvtcnD61Huo7r9O8B+rHSWZO4Iaayr6D1yDcLQnWEntYdDBOayzXjYST9XA89l047R6GDaEqGUqgVzQaJbBBPBrGmrOnetTUZJMWQlrTLT5MQHdJodnFH60s7wWQ0wpxO4Z9Q1Do4uWnk3+pdVDOad6N6WDsOMCUP+XZtjeceYdgNzOJF6F3RTwBj9aN5fTWnFcadetb0IBYgnYM0VJCxMH+gPq6r7VWN/KWP9FdBGvStglxyEPZjZD/7CR1GwyGW0jaDjoIk+4bKBd4rrVOloSpIO3+3ndbKggR3CQYV8Y73IQp+UsuC8BCJDqH13FyyspAg61tH+xLkm3nV1s9BhoMBbkWrZs3PMdlE2zEwfH42xW/P66pZ1jkzy0pdBvmuf0cnDPp9fFHwyRTv/7uug+w/ffwETdq6WNXn0AQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                            <uix:Target DesignTimeRectangle="649, 726, 162, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1153-record-283' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1153-record-283' tag='DIV' type='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKYAAAAYCAYAAABwSIZyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACNSURBVGhD7duxCcQwEERRVacer5crQmU4UQNK9rDB5gLnmuA9GIzy5Wdua60aY9T5Ndu9+xbbnLPM0tZ679eVQoL7Fh0mUZ7D/H/AbopJJMUkkmISSTGJpJhEUkwiKSaRFJNIikkkxSSSYhJJMYmkmERSTCIpJpEUk0iKSaTnMN9+BDLbvfb5HmWWtaN+lX0KNZgV+rAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                            <uix:Target DesignTimeRectangle="474, 730, 11, 12" FriendlyName="'SPAN button-1210-btnIco…'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='button-1210-btnIconEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='button-1210-btnIconEl' tag='SPAN' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVDhPrZPNCoNADIT3OfUkgvi6izePuvoO61/KpESG7WorVPjIJjMZtFU3DIOs6ypPLvixF0IQtyyL7Psux3Gc/NJjr+s6cTYwiqL4inm99+K2bRMGhnTGsP6fAPwgeB6rMHB/p2sAGsYMV7CuATFGYWBIZwzrGoD/k4EhnTGsa8A4jtpYNQMqk+roNQBvExpUYGac67qWpml0ltPPAKYsS61YbttWz2mAnTVgmiZJqapKl3MaAuycDbhbBh8BuJV5nh+DPf2Y+r7XJme6Av73XpAXGKV/J/ewbckAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NClick ClickType="Single" DelayAfter="1" DisplayName="Click 'PilihBarang'" sap:VirtualizedContainerService.HintSize="451,156" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="474, 578, 12, 12" FriendlyName="'SPAN button-1163-btnIco…'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='button-1163-btnIconEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='button-1163-btnIconEl' tag='SPAN' type='' aaname='' /&gt;" Guid="08b3156f-c5e4-4968-b4c2-e61642b5b0e1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADNSURBVDhPrZNJCoQwEEU9p65EEK8r2bmM0xkSh2p+NSWfdJNW6MWjkvoDolh47yXGKOd53gZ+5EDxNGwg55yT4jgOYcqy/Il5+75/F+z7rgtMGPie07Vg2zZhYEh3DOv/KcDLYGBIdwzrV0EIQReYMPA9p2uBfU8DhnTHsK4F4zgKA4NNJtVBtgA0TSNt2+YLpmkSpqoqnQh3XadnhEzn89cCUNf1FU75KFiWReZ5FpsWTvc2UWD36wlweQpy+jMNw6CN67reBn7kvPfyApunfx7x7sL+AAAAAElFTkSuQmCC" InformativeScreenshot="13b38449fd83b93b55e2a98dcc6cc904.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="649, 574, 162, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1113-record-187' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1113-record-187' tag='DIV' type='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKYAAAAYCAYAAABwSIZyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB8SURBVGhD7duxDcMwEARB9V8dG2EDTGhLgBw55wZzwOAb2PSv/d0Y4z5mx/e2eM05N9Rca62n0vvCaW+LwiRFmCQJkyRhkiRMkoRJkjBJEiZJwiRJmCQJkyRhkiRMkoRJkjBJEiZJwiRJmCQJk6RfmP8egeC0533XrLW9P59j5+vBS2Y+AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayAfter="1" DelayBefore="3" DisplayName="Type Into 'CariSSH'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;KodeSSH&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="570, 414, 134, 20" ElementType="InputBox" FriendlyName="'INPUT O718_id-inputEl'" FullSelectorArgument="&lt;webctrl aria-role='textbox' id='O718_id-inputEl' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' id='O718_id-inputEl' tag='INPUT' type='text' aaname='' /&gt;" Guid="d79a34ba-6b5c-4b62-a164-2b5d9b4c19bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIoAAAAYCAYAAAAlKWUsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVGhD7ZXLbcNADAW3/34MpIQUIltfpwWFjwYJ7kJ2A57DZPQiHwdUex7H+Vdgs692e+77efv5BXiLGslQZICRDOXYNh8ywEi00YWicjCuzouyr+srFLNeastBbt5/5fvLiwIwkqGoIA0ZYCTa6ELR+cG42i+KuW3L4kPeDYyr/YiYWx2qCOPq+Np0FwVgJNq4/PQEbHaGss6zD3kzMK72UMytDoCRDGV9PPKiOLbzmf31O9roPj0AIxnKYgVpyKpJDtjsaCND0T/jh/HMZkcbbbnfX9WYAUaijT4UKwfjam/D3OZp8jHrhaGtZzZbO9po+qMB8A4F4xcF4DPT+Q+V74imsWiOHwAAAABJRU5ErkJggg==" InformativeScreenshot="b8d6020a61d0ea8f180664e8f1c3be5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="624, 395, 28, 13" ElementType="Text" FriendlyName="'Kode'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1244-textInnerEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1244-textInnerEl' tag='SPAN' type='' aaname='Kode' check:text='Kode' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAARCAYAAAC8XK78AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFxSURBVEhLzVHtUcMwDPWApO06ac0grfu7M1BnjH6AmaGNky4gZMkKaghw3MGZH8+yLenpSTK3voeS+AcCuo4fhWz5CfSo5FfRWDDGgFk4eJ3yj/Au4Oxgdpfo4TG9E5b+LulL/FRAFyP0iO6kBODbL7l4tQ3sl7jvrBYw5R9Zkw5SowQ024pIZrk4+dE2WRSjgu2Z/4fpacgEopokwUKT+XgCbUtquuMGKh1Y7/k/+4NjUdantwebyXz7Am6R7hW4E8b7FefPNxBiADeXOMzDJqkGrlR4aQUEcWKwpU4zIfmRSBfBP1mR3eU87DikWLWCMHCOILEIE5MSRJQJJOXtnjuke/Jjl9QJCjhyvK+ZzO50HvLoCdxx5jojyytIGAXLyGkV6k0rEIFmhaPVd/RpAYNwyfsIE69XIBzWWcAaAv09D8mmfqIY6ZrxAO6Qc/e5qMYUjyDzJbAAVFLKmjZdEKXssAL5+Ax/5Tft5QLlcIE39QH2SFKQLcwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NClick ClickType="Double" DelayBefore="3" DisplayName="Click 'Kode SSH'" sap:VirtualizedContainerService.HintSize="451,156" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Version="V1">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="1147, 465, 99, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1157-record-235' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1157-record-235' tag='DIV' type='' /&gt;" Guid="edf0e0b5-cfe3-4af1-bced-e47a88bcfe32" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAYCAYAAADnNePtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACYSURBVGhD7daxDYQwDEBRRr8NmIJRItrsQEGVBdL4IIBFec1Jv/hPspBpvyxlKqWEw5wphDXi1FrHIoanh3GAjANmHDDjgBkHLOMcjAOTcZbNy6HJOPtrEYNxwIwDZhywjOODgCfj+JTmyTjvRQw/x/kcl/XMOs/3X/2TlwNmHDDjgBkHLOO01sLhzYjTex+lzq/DmOtyIr4GBPMzBpME8AAAAABJRU5ErkJggg==" InformativeScreenshot="b82a01eaffe1869c08e234bcf94382e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="1164, 432, 64, 13" ElementType="Text" FriendlyName="'Keterangan'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1167-textInnerEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1167-textInnerEl' tag='SPAN' type='' aaname='Keterangan' check:text='Keterangan' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAARCAYAAABkUAr2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIASURBVFhH7VPtccIwDPV+5FgHCIOQdI42oVMAB4GOACRpR1BtybLlxOlx/EvJj4cj6+nDT0J9ty108RO5k/jPfhSECdNpBGkamOBBghiFpOOFbdXWNbT6YzrpVObHKGMuPpcKlFKw3pL99ZagrVQC+aEmnuCzHcRF/GOyaUMstvywUtuHDBIUI4Wt4MQQxEX8Y8KAIAWsI2Jcct4YQpJX0JZpcOdinKAW8wwuMscypRrLwtV10HdYs5dbw+aR/UqEw2TQhrd1Bflc3hPkIFVzvwOjXEjiDPK99zXlCu+T7CS4xOG4tGR+AanJMd/AuRN7zmb47bAofA0N9mMuG8d5gjrsw/iTe6jvgSF76fD2GxKO+9RAQYwy5mTFEz09JNpmjT8Uy8Mkln8Z5Mcma6An7wTRuVvNRX5vopS3dYJk2LCsI8WRkyc70q9+9KXLc4JQ/sENMeRgUh2fjIn6gumFXCkI3nFTagWl8GOuPzYkrBlOnn20zU9sCCMsYhPxX6fT3HCcQSdWcAcFsXkfFYR59Oi4IME7HhWkvt2AUXCiwt4VtiH9sGwnbYa93/GUDVZQYL4PK4pHkh2hcoJ89OpKYA9cTzdc9fo7QmYf5xHrxwJz+BjMwTyb3/QSCDJesPg8jOeh6uuVjNGd750NtNvxcHz89BvCjhe31V1/TGBc4RcpwIXotSBL5gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DelayBefore="3" DisplayName="Type Into 'Qty'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="451,216" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Banyak&quot;).ToString]" Version="V1">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="867, 473, 80, 20" FriendlyName="'Tip Ex'" FullSelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1053-record-153' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' ' parentid='gridview-1053-record-153' tag='DIV' type='' /&gt;" Guid="b720c836-ce11-464c-9558-e58678588c12" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAAYCAYAAABk8drWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABtSURBVGhD7dJBDYAwEAXR+neAFkysDC6r4ZdCwEDnOC/56Z4nHcd5xXEzKLyRW1WtRxu+hgaFGBRmUJhBYQaFGRRmUJhBYQaFGRRmUJhBYQaFGRRmUJhBYQaFGRRmUNgftLvjuD0/dB3a8zZMJvi7u28VUksXAAAAAElFTkSuQmCC" InformativeScreenshot="155919577c2e3001407bf11581d265eb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="873, 424, 68, 13" FriendlyName="'Tip Ex'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1075-textEl' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='gridcolumn-1075-textEl' tag='DIV' type='' aaname='' check:text='Qty' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAARCAYAAAB+bOp4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGdSURBVFhH7ZJNcoJAEEb7fgH0KNlFQc8hiDlGUME7uKAoQ3kANf5HicsOM8PIoBCzkHEhi2fb/U1rzauB0+mEFcXATxRhFEMqp+rT70Ca6Hikw0KeOIfj4YAVxVSCbgDf+z3KZPquIQCkGF6aj9rXswfDBO122aCkfmQwKVovZHMupG7jVOx1N3f/ET3st1vcxZRfXWwlMkJh7ulMWttLcoFXXaVVjYWS82Ev2//9f/epQD6k4LXYxePXIc7FS1+dCWxUSU+lhmjXibgWusJ+2cB2vUYpDA12+eYgMw+7ChPUneSecZtEioL20GKyLvbLhgrarFa4IZUj9HfL/eSCNQs/hZwL6PpxzwU1+ul+MlNrTKQxTH6P56T+5/95dtHfymG9XKIsBg0iA1CxAjbr60yIZuJE7BuOsOegQWYUHQfnuRykCiJMLPYSzmRkBGhpaWb0sztnsRKB5WKBj8B5YxJ0Jz9P8dGk0l7QHOfl5cIEzedsILV+oJ68FPo6TD//3LiDCjmjdTDIy0uu8DWb4SImr3KeOQfSVBQxw1+Ml1oBBplTVgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NKeyboardShortcuts DelayBetweenShortcuts="{x:Null}" ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="451,178" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Shortcuts="[d(hk)][k(tab)][u(hk)]" Version="V1" />
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Harga Satuan'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451,223" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Text="[CurrentRow(&quot;Harga Satuan&quot;).ToString]" Version="V1" />
+                                  <uix:NClick ClickType="Single" DelayAfter="2" DelayBefore="1" DisplayName="Click 'Simapn'" sap:VirtualizedContainerService.HintSize="451,156" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://bpkad.hulusungaitengahkab.go.id/?mode=bpkad" DesignTimeRectangle="797, 778, 16, 16" FriendlyName="'SPAN O3F9_id-btnIconEl'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='O3F9_id-btnIconEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='O3F9_id-btnIconEl' tag='SPAN' type='' aaname='' /&gt;" Guid="d9b840a5-2bee-4653-a4fe-a78a4783b1ae" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVDhPrZC7CsJAEEW3sxFs/QErBRGr/IFBQRDF2kcjCIKghb0IYiNE8n95fkOeIzOwQjabYGCKm5M7s3sgEXmeA2f4hVmWAWf4hWmaQpIkwEV+IT7iOKbShOLUA+O1Ks+rLtQRRZXCKIqgSaQMo9s3EprWtlaGEY7jgJqFfYDB3SzMZp89iVrnfmGuRriuC2o61xEFxdin1o5k3ZtROquGhGhWicL2ZQiT94Zk48dce06l8DyPio7yf63to3avY0EoI7vxXP4+W7fXdeH7Pr0gZWRX+c++IOSgCIKAChf5hWEYUuFhAF9yWbeQxC7uuQAAAABJRU5ErkJggg==" InformativeScreenshot="acc1e6d769d19abe793e0026587eb3f2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="786, 805, 41, 13" ElementType="Text" FriendlyName="'Simpan'" FullSelectorArgument="&lt;webctrl id='O3C1_id' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='O3C1_id' tag='LABEL' type='' aaname='Simpan' check:text='Simpan' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAARCAYAAABJoiVMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVEhL7ZTbDYMwDEUzYyQWQlkl/LAHfHcGPjKGi52XHSgS7yJxpSul2JhjY6rggXqhr9ILfZUkdG9AKSWsG5ev111IvFcZ+s/AlpSgXaPzZEvFhioLDjoweFYadOXfBp5tb0HTOeblmsJxKJO3asbKqFife6w/UJA0nTRzauAHNBZKYBRzYKmRIkagMabA9L5s0hAapjxZf24Dig9xpktMnoUOkymKdrW/D8EkdP7th5GbSN4GzcRBD4f+yKnvmzRTSBb/Hrug+erINdoMHR/GvbzTK6CZabKoeB/3WugzVK7HUUrQouMDjOLQZXyL27aluqdO+iw9EBrgC+Rqvyb7D5dDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="451,721" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                                    <ui:IfElseIf.ConditionBlocks>
+                                      <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                                        <ui:IfElseIfBlock BlockType="If" Condition="[CurrentRow(&quot;AutoPakai&quot;).ToString = &quot;YA&quot;]">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Version="V1">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="http://localhost:85/?mode=bpkad" DesignTimeRectangle="733, 541, 69, 16" FriendlyName="'Ya'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='button-1006-btnEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='button-1006-btnEl' tag='SPAN' type='' aaname='' check:text='Ya' /&gt;" Guid="ee72d467-4fb3-4956-bfeb-3cd4cd6375da" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAUCAYAAADBYxD1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF6SURBVFhH7ZM9bsJAEEbnTj4ULuAWMWli3yGhDUdA0CEFcGnoUiSKbXBBl/h3sjOwZo0hRSJ5I7GWnma+mQWspwX8109M8wrN037IC/mBr6xEy7KwqipTL1TyA+rQ0ER6gbIssSgKNPV6ZUlkjAbq0uSCvVAGCnme15jczkANGVMX3eCjK37XXSqzpSvexUW/cU4f0gtkWYbaWAgp/TGGnEMc94W0xdmZfwBLImPni25QxJAwzz/MqRfvdGCA43f1M90hvUCapqiVlwcWMegP8PmtvV95QpS3as27BMIwZGNUdTEdWtgbBcpsinf1TRIMp8quO6QXlqSbpqQAH3unHIx62iRJIIoiNkZVFzMhyR6tj3mNT0KSMzn11nBWn+0S6QXiOG4sdGRVEu8nzvGvZqNzbzck/eb7/5phu93yC1EgKMv+1jN5ocw3yfAz9U2iamhS36TdbseNqdcrhHHCxpLE1EuV/MB8s8ePKGFjBC1lf+uZvMw3e/wGhUXezz+asJYAAAAASUVORK5CYII=" InformativeScreenshot="b665bdfd3367004b43513dbbbc3c6a3d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                        <uix:Target DesignTimeRectangle="689, 461, 238, 16" ElementType="Text" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='messagebox-1001_header-title-textEl' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='messagebox-1001_header-title-textEl' tag='DIV' type='' aaname='Confirm' check:text='Confirm' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAUCAYAAAB77FrQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE0SURBVHhe7dg9bsJAEEDhFFzNOQodp3BBkwNYdEi+AHQRLRJdOgpOwDEmsdez9v44EcgwIn7FV9g7WmieduW3r8tVANghQsAYEQLGiBAwRoSAsSdGeJTV+4csWrVsszPA/IxEeJb1UoOZJpxt6fZZ7Zpn3b+S9SmdBeYkE2EfoAtmCkQHjEkj3NVtgIvyGL5Xp70U/nQczg2vm8pFd9hU4fvyMwjdr5e128OvV1J0c26WKy3+nyTC8NoY6yJY7uXw86zxFJtzv6anXRBzfBKGp+1fkfq9uvB+/4/Aa7ktwviU1FOxjXKCCP2pGs0HvxPH38wDryuJMA1igAiByWU+zEQx5dYedR0lQsxQJsJGH0mv+xCiQSgfDhEC9xiJEMCzECFgjAgBY0QIGCNCwBgRAqau8g1zr2S1IqIYxQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                        <uix:Target DesignTimeRectangle="740, 492, 178, 14" ElementType="Text" FriendlyName="'Auto Pakai'" FullSelectorArgument="&lt;webctrl id='messagebox-1001-msg' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='messagebox-1001-msg' tag='DIV' type='' aaname='Auto Pakai' check:text='Auto Pakai' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALYAAAASCAYAAAD2fST8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVGhD7Zg9csIwEEZ9NiqGq7hwywUoKelpqSmpuEBmKDkBx1Ck1UraXcsTQyZFpK94Y/Tnz8XTWmb4er4cAK0BsUGTQGzQJBAbNMn/Evuyd8P25G61MQAEc7GDPMPgNseH7l/iU9nuJ7fxOSErMV4q8yTvZlHG3p1rY6BpZmKfJy/Y9IZAvxJ75w53btOGEu0an2aB7jBiX91IcqWr7JcVNbXjNVfdJB1Jyn3TldcYrNjPhzts+U0h13tyrhI7Zsc3i3mOlImK3S1abCFOqNzlOLIktl5TxpKwQtY8ziyIPTuOSDlz1sJcQoxB7G5RYiuZK9VxldimfTvujPiMFTusq0oYsqTYezcubRaGjlMQu2uE2LLSepR468WeiWzFT9D9xfGhUr3LmBCb+6zYlJvnQ+zeKWLPRItEgeyr/w8qdiZmFXFtxQ730pvQZqBigyw2yWE+9IowRjaunHV5pHRWUsEPYudNRFlWbP9b5OpnF5sOYndLFltXZEbKR7+5kk/+nJvkYRGpP0nH4se5a/8VEaj1IasitoeEprEoc1zj56Nid4/6eASgFSA2aBKIDZoEYoMGeblvISgBG27BrE8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                        <ui:IfElseIfBlock BlockType="Else">
+                                          <ui:IfElseIfBlock.Then>
+                                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9ee2b724-b6da-490c-a93d-a61409db73ae" Version="V1">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="http://localhost:85/?mode=bpkad" DesignTimeRectangle="814, 541, 69, 16" FriendlyName="'Tidak'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='button-1007-btnEl' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='button-1007-btnEl' tag='SPAN' type='' aaname='' check:text='Tidak' /&gt;" Guid="6b9436cf-c5b0-44ca-b4e4-dea9143ea282" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAUCAYAAADBYxD1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGySURBVFhH7ZZbcoIwFIazp6xJnuomqI9ediAuQO1zlRXUSi2PPAqCW1DU01yISSQ4nZaMnWmY+SY5/wko3wQUbbdbKMsS3FE/qBfqBx2PR7hcLo4GqB9kajh00Ol0gvP5DG5sHpkkgQhdrdeIvpwENHh0vX/pAh5Fjf2y3MPsCcPg/XvXa6PWJLVNNMKAsQEiQZWh0pRLpCRzv33Yr5t9IhjgLswyU0+nmBNJw8jY4xRc0srUs8PDJOkyaF/ZaSJfDZQdKM5XJfH5fam/Bx0OB7DPGvrkJqepzHImac3m6yGG7jyv5Sp0Dc9zmBIx/Tcx6utswP5x22cJPvZg/CGzOPAAPy9rPZmL88ROIrA8hnGH114QV+vs8oclcRlCxG3uv9avaQuUpinYJ2Q3FGxkFk/ITfdCMo8hoDImMcvDHtklSu4v6Ho+r+ULn+woH8Lr59hBk5Rlmda85ef9StKn7EtJpN4E4FWPlNdRciaB5h74PV0ql1ddpxJl6/sj2hDsdrvr3NWy1iQ5zCBqy3EfTVKe51rT1bxmj1tRFCxwY31kj1uSJGyiNpv4b33qJUkS+AIgcSBUDlr4EAAAAABJRU5ErkJggg==" InformativeScreenshot="bf3abed01928c6aaae12959a1e53fff2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST' /&gt;" SearchSteps="FuzzySelector, Image">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                                        <uix:Target DesignTimeRectangle="689, 461, 238, 16" ElementType="Text" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl aria-role='presentation' id='messagebox-1001_header-title-textEl' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' id='messagebox-1001_header-title-textEl' tag='DIV' type='' aaname='Confirm' check:text='Confirm' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOEAAAAUCAYAAAB77FrQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE0SURBVHhe7dg9bsJAEEDhFFzNOQodp3BBkwNYdEi+AHQRLRJdOgpOwDEmsdez9v44EcgwIn7FV9g7WmieduW3r8tVANghQsAYEQLGiBAwRoSAsSdGeJTV+4csWrVsszPA/IxEeJb1UoOZJpxt6fZZ7Zpn3b+S9SmdBeYkE2EfoAtmCkQHjEkj3NVtgIvyGL5Xp70U/nQczg2vm8pFd9hU4fvyMwjdr5e128OvV1J0c26WKy3+nyTC8NoY6yJY7uXw86zxFJtzv6anXRBzfBKGp+1fkfq9uvB+/4/Aa7ktwviU1FOxjXKCCP2pGs0HvxPH38wDryuJMA1igAiByWU+zEQx5dYedR0lQsxQJsJGH0mv+xCiQSgfDhEC9xiJEMCzECFgjAgBY0QIGCNCwBgRAqau8g1zr2S1IqIYxQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                        <uix:Target DesignTimeRectangle="740, 492, 178, 14" ElementType="Text" FriendlyName="'Auto Pakai'" FullSelectorArgument="&lt;webctrl id='messagebox-1001-msg' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='messagebox-1001-msg' tag='DIV' type='' aaname='Auto Pakai' check:text='Auto Pakai' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALYAAAASCAYAAAD2fST8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVGhD7Zg9csIwEEZ9NiqGq7hwywUoKelpqSmpuEBmKDkBx1Ck1UraXcsTQyZFpK94Y/Tnz8XTWmb4er4cAK0BsUGTQGzQJBAbNMn/Evuyd8P25G61MQAEc7GDPMPgNseH7l/iU9nuJ7fxOSErMV4q8yTvZlHG3p1rY6BpZmKfJy/Y9IZAvxJ75w53btOGEu0an2aB7jBiX91IcqWr7JcVNbXjNVfdJB1Jyn3TldcYrNjPhzts+U0h13tyrhI7Zsc3i3mOlImK3S1abCFOqNzlOLIktl5TxpKwQtY8ziyIPTuOSDlz1sJcQoxB7G5RYiuZK9VxldimfTvujPiMFTusq0oYsqTYezcubRaGjlMQu2uE2LLSepR468WeiWzFT9D9xfGhUr3LmBCb+6zYlJvnQ+zeKWLPRItEgeyr/w8qdiZmFXFtxQ730pvQZqBigyw2yWE+9IowRjaunHV5pHRWUsEPYudNRFlWbP9b5OpnF5sOYndLFltXZEbKR7+5kk/+nJvkYRGpP0nH4se5a/8VEaj1IasitoeEprEoc1zj56Nid4/6eASgFSA2aBKIDZoEYoMGeblvISgBG27BrE8AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                            </Sequence>
+                                          </ui:IfElseIfBlock.Then>
+                                        </ui:IfElseIfBlock>
+                                      </sc:BindingList>
+                                    </ui:IfElseIf.ConditionBlocks>
+                                  </ui:IfElseIf>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                          </ui:ForEachRow>
+                        </Sequence>
+                      </ActivityAction>
+                    </uix:NApplicationCard.Body>
+                    <uix:NApplicationCard.TargetApp>
+                      <uix:TargetApp Area="-8, -8, 1616, 876" BrowserType="Chrome" ContentHash="LcWO_NHIeUqatUHeN3ERWw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA8rSURBVGhD7ZgJVFRXmsczk3Qf286iIIsSAQFFBVcEQfZ9R1QQRUFBElCJisQEjYyouOKGICYom4AIIqCtCAgCyiZrsRQgVeyrYRGBdmLa9j/3Fe9BURQmmaRnzpkz3zm/c591pN7vf79773vwwf/X/4X6N1KrxUS0D65YfPaKlkpioqFmXq61IZdtZzlcbW8xlGtlwE00WvM0WHPl7W+WLjyzSnSGFvUz9I//75X+HHGLgNXLI0s2mL1o3GCKxnXG49gaoXGtIY0BuDb645DPim0Me86oKkfoiIuY0V/3P1dqs0S0kky1CxvtzcETp1hvMjEAE2IsiMF4EGsaKz3emKi3On+VyGea9Nf/60r2k7/ODzfQuN9kb4EmOzMe75Uf64CQLjABeOjy/h2queKuzPS/yNO3+2NLX0rcstLe4mWTnTkRp6DlmQC/JQR/B5gAljrgWuigwkJv4A9fVl8qzT/A3WT9dlyeLwAlLqwLE5bPFB0YC0ECMCEIDVZ6b10VZLzo2/++8l+9/IcmB0s0kfXOg5b/xSXEhBDWASbAWAcmdoHBb9miYFrjv1c7FOcdeE4JMvICASYsIWHyYwFGN/CkLrxHnmuuDY6FNlwU5u6jdX5baYuLWlWsM35bR2Q4GyhhRl5IiF/VgSlOIf4A/CFIAIoGS923WmIzTWitX1eiH0+TfWShN1hOvrhmrT6eE0EuFYKvAxNmf6oOjMmPBhAuT2DkmQC0PMdci0eFmdaA9PRpcrTeL5fBLvOcNDMtPLPURSW5aS2RaVhvPDbrk2ZfMACzfMZCCJl9Xgh68/J3QFgIM038oLY0mdZ7f01bKKmlEOuOA7uskWOhiVLyZdXkxnW2huBSoszM88sLCdFAxGttDMDmoQ82ER6DzDqbTA5FDREegwiPQSawhojXmK4ZHQkqMz7TojWnLpnjdoVysV9AI2QbYsiX5FuQFlrroYZI1FMzyh9CQLx+A1lqRw+h7e4dvGDXoK+76x8DfT1v+9vZ6Cy7g8a73qi7oo6GkFXgXlVF0w+r0BKqitbrauiIUEVHpBq6olXRfUMVvbGq6ItbhYEENQzfWY3hpNV4cn55Ma0pvKYvlTan5BlcfDbgrrEmiiy1UUVmjZrRhrV0CD5xLoHj54PeOjZevXr1Xvo6atGath8t0epov6mOjjh1dMVr8Oi5o4H+5DV4dX8NXqdp4qcMLbx5pIWfM8mYpYmfs7Rgpi5iTutOrtkehpGU+LyYUZQidiBwnR5STbV4S6mGdOI5WRqUMBOAQ8bW6LAxwdrWIYSkD2Fn2DDsA0dgd2kEHuT6StoQaluGxv5fT3koOhM10Z2siYEHWvh7hjbeZOvin09p8gj5hAJCIaGI8EwX1w8vvE7rTizq9Vb2qlMPI8+w1t8Bd4zUkUnWYAXpBJuEaCD7gZn9tuhwntDA4CsEpQ1j7fkRWJ+biFXACCwJ1BiYOoz+l6MhBtlhRFKfSOrjXaEB3hWRsYiMzwyAYkOghFBKrsvISEGuuzN0u4W+ik9TlNSUjXEDP0wIX1cT3Cchckw1yVLSQR1ZSpx1Rmg6dmhM3iduGDZEnkJYACaExdkRHIgdD/G66iDelRjjXakxkSSUMxjxjQQmRJkB1Jd8qk5rj5eIw+pTMtE7QCEYQifQCbcN1JBhrI48srGp04N6wPXV1/Ekgh4OT5JmYMT5oUJcIp3gdeFFLd6WmhNJE1pYEP4AVDcMcHy33HFae7zEPPVvMQGE4eFlg3ukC49NNPCMhODSs0+teWrZ/NLM88tTWBLY9J54zT5MJKkAgiEmy1PEnlCOpbXHa/ZhqyfCxBmWhbogzEID6cYaeErO5tb7ybybUxt2KvGp5BmCHtKbujmFiArrwMSlw5B9bWU2rT1ecwLsOdLRrqAQlGc+dzhih/uGqsg1XjN2ZFKnjWAABv4A/OLmZ0b54troMnpFltE/S6eYfV6IcXmK58kaz2nt8Zp73XlYUJiB+XxelCvOOurjkeFqsnZf8G5OHZNTSTPi/AEoceZ63YWR0QADPfhHsYD82MzzMxpgOE9nmNYeL+lQpyFBcWEYB2zG3/RV8ZIvAP+SYRCcdX6YDrgFvcSPnV3o6mzD/dsXkZaUgrqwe3h5+xZ62VkY5FwmwdaPiTMMPdEeorXHSyJgfcPcGy54H0yI/R7m+LF+dAlRDylB8ffNPDVuOdOLhIBSDKRXoYZVgY72Fjx7VoDqilJ0cLrQWchGY1YRersGMDL0GiPcRLzJsxkL8DxZffISEvvOIleYND+f06iEOKH+b0m8ANQTlpHmhxEXxOtqB+quZmCoZwBDzd0YGRlB/0AfXr95DVZ5IdoGycbuHEKxzxVUnYtCU3kNekrrUe8fTIL4kgD6ePz98smbeOYu3VuM4FTwB7kQdYIXgHo94J95QXn+NX/y7itwU4vQ/H0qfux7id7+fnR2tOHl4ADKy0tQVlGMkAtnUXg0DD3xeTilbY/Mbb5E/gZKdp5DefwDvHzkiWj/xZOP0U/tV54UFGaQitrOg/+zBREuaKmv+08qBPV68L5Zp0LsDq5DUVkJuDGZaA9KRY1vBJqKWWhsacJGhy2QnrcIPod8cS8lCYUPH6P3NciYg/xzkWDtvYQSt9Mo3nIU1bsCEe5plkBrj9ef5ouvYUR/DXOitsEl8xKvC9RrAfV6IEycwvHyS1Q1NKOhuhYtqYUY+OknNOVXobupBZGxN6H4uSS8t1pBR2UZMjMz0NTCRVvzC3TGZSM1LgXpkfHI2H8aGa5+yPU4jXveJ4ckRMVkafXRol6QJAIdeigxQaYKQHGpfPSBRoWgXg+oJ6xggPDURtRx6sDJL0NDUDLauB1g19fi9esRRF4PxVa95SgI8cYVr83IzspAYkI0Mg+eR/uNTDQ1d6KGXYey4grUllYiPT4ZlVXV8N97IpJWH68ZOzTD+MUFmU3Dfy0V5UJCpPBCUFCvB0GpQ7yHlC0557eHDKChoR7tne3orOWgNSwNtfu+R33WU4y8/jtYJYU45W6HRN/tuHHYDankCc+qqkBqVAz6+8kxO/IGfSX1KMsrRVDgVRQVFKKZ3QhWSg3ERcQnduHPSrNN+eUYBAMIIhnpDJdHl1Dd1TgWhKG5uRlVVZXoaG1Ba/cLPB98g46HBWiprMPAq37Exd+GzjIl+G0ywXFvT9RzOLwTKfrqNdw9HYyS06Go2ROMUhL4jP9pEiAfcYExeHDhIVSXrJr8J5dZh8zy+MUoBP8tiESkEw/pG65wywzETfZjVHVy0dX/I5pb28CqYaMqIw8lJyPAzsxHcVAsmtrbsWePF+bJLYS0lAyU5edhpogk3L7wwPDQINkLj3B8226UbT+LxtRcNL8Bemub0VxWhdsRMXCzcoa5jnEOrT1ef54vpikZIVx0qiBMAAZx3uhMurYd4eSpymLVoPzSbZQ7nECeox9SA67B2dUNs2ZJQXHhEkjLKkBGWg7zZBdAT5/8ntHMRW9fL6LCI3Fh406wzoah6lkxCo+EoL+1B42cRqSEReNKaHQFrT2xZn6llyIoKUyUgRIWhljEVkRH3EBFeSWKviJLzOksyrxCkHbvPlRU1CAtowA5+YWQnacIeXllLFBcBgMjMzRxatHA4aKSnFrHD32HSJtdSLX2RJLL16RzbeAUlqMyMQ01gwCtPLE+FPtEXjzYYUCYrDAEpZmRoqqkDBnV3eBkFaN4wxFkngtHS3c7tji6QkJSlsjP54VQUFgCpcUrsG/rRpQmhIBVVIS2jm60kL1z5eQZRNh4INvWC7fX70Tidi/c3e+HtFMXhQegitrQ4uGOb6cS5YeR5b+mmBWxBZcc3JETEQf24TAkWOzFems7HDt6FOamtpCYIw+pz2WxYIEyxCSk4WBhgeykJNy6Ho+owGAUFj5D7pOnqK2tRcy1MARv2o1c2wPINPDAHS0nHFM0YNG6wmu68SIvQVl++GX5pfmvT36xEze1nZFusgeX3X1wLugHfLXbC4a6+lCePx8Ss6UxS0yGzP5y2G06gKPnM+D/7REccXFESvJdlJRV8PZDbT0HifEJuOjji6hdPrjlsAe+uusnb2LB+mSLarB4hHBhSlBQmEI0fBx7byckaG1DjPPXuBWbgIxHObh3LxWmRoY4ZK+Lc+62UF6qgqzsp2CxOxB/twK7d3jDy90NBYWlaCRP66rqKqRnpKOCVYkCsrSe5j/Bgwf3sNbG+tf95XqakeK+Wdc3v51KnJFl5PmDzL+4GccN7HHM91vcTIjC9etRcHf3gIa6BlYoLYK7wVI8DPZDI5eLssJcDHS34lpYPI4eP4MicvKUllWCVVmN7JxcZD1+gqSke6gjS4pdy4aUlNTEB9n76iMlSRPRQPsBRo4fwQAi4Y7jfO+AJ2mnEXv5MHbsJWH8TxB5NRjoaEFGRh5bNzviG+d1CN7vjGT/nfB33QAdPRuYrHWH7/FA3EpIJCFYZNYLcP9BOk6eOoOH6Q/h4+01+VXil+rfxT6W+2y3TopomOOEmWZkmSAMM8M2wyDcHj+Xb0JXawHSMhLgsn0bOet14L3HE3IkgL//SRw+chpzyV5YriAPZcWlkFcyxJLV9lDTc8FBv0CUlbPQ2fUC+QXUpn6CrJzHg3MkBF4jfkt9JC+qMcPHOE80TMiME2aGb+YxI9QBjQW2vN+i+vK3Yqi7DOfO+8FxyyYM9HXh4Lc+EJdShvVmHxjZfIXlmlswW2YVZs9dikXLTaCqvRFrjF3hsec/yBJ6itBrEaQDATAyMrSlVX5f/WnxbNOPndXDRM+t7RYhXeEPMCNsE3YnOuBdufG70V8F9TFU7kk28R147duN0sI8+B70gYKiCqzt98LpyxPQNvkSbm6esDS1hJS0MhSXGEFN244XxHPvNwgIuEi6p7+dvv0fV9SrONWVv6xbeuKvX66J++yAYe4MP4uG0hTj7r4sreGaBLWGR1eX5UYdWxR36YjF7UPffTNcUVqBr733k6evMlQ012PbzpMwtvHEg/uPwa6oxmVy3FpZb8TMWfKYI7sSp88GD65UVfljZv731qeffiJrbGQYKS45Cypqa7BCfS1sHLxgZe8FTV1T3IyJRVZWNvZ5HYS1rRMWKq2KFBP7HWv+X1UffvShrLi4xD7J2fNyZOSWspRW6GHxEiX4fOvDunAxKEdOYdG+adOmv0f8gw/+C2BcvJuutD42AAAAAElFTkSuQmCC" InformativeScreenshot="be67f903c1b5455439042d947a68261e.png" Selector="&lt;html app='chrome.exe' title='Transformasi Digital - BPKAD HST'/&gt;" Url="[CurrentRow(&quot;UrlApp&quot;).ToString]" />
+                    </uix:NApplicationCard.TargetApp>
+                  </uix:NApplicationCard>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
