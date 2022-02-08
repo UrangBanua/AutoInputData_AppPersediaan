@@ -4,7 +4,7 @@ Automisasi Input Data Excel Muasi Barang ke Aplikasi Persediaan BPKAD HST
 
 **Cara Menjalankan Project :**
 - Extrak Folder "AutoInputData_AppPersediaan" di Drive "D:\".
-- Letakan data atau file excel RKA (data yg akan dibaca) "ParamInput.xlsx" di dalam Folde "D:\AutoInputData_AppPersediaan\".
+- Letakan data atau file excel Mutasi Barang (data yg akan dibaca) "ParamInput.xlsx" di dalam Folde "D:\AutoInputData_AppPersediaan\".
 - Buka cmd dan ketik "UiRobot.exe -f Main.xaml" untuk me running project.
 - Cek Loging data di folder "%LocalAppData%\UiPath\Logs\".
 
