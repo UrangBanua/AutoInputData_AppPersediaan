@@ -1,22 +1,51 @@
 # AutoInputData_AppPersediaan
-Automisasi Input Data Excel Muasi Barang ke Aplikasi Persediaan BPKAD HST
+Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 
 
-**Cara Menjalankan Project :**
-- Extrak Folder "AutoInputData_AppPersediaan" di Drive "D:\".
-- Letakan data atau file excel Mutasi Barang (data yg akan dibaca) "ParamInput.xlsx" di dalam Folde "D:\AutoInputData_AppPersediaan\".
-- Buka cmd dan ketik "UiRobot.exe -f Main.xaml" untuk me running project.
-- Cek Loging data di folder "%LocalAppData%\UiPath\Logs\".
+**Review Aplikasi Persediaan KAB. HST**
+<table>
+  <tr>
+    <td align="center"><b>Deskripsi</b></td>
+     <td align="center"><b>Foto</b></td>
+     <td align="center"><b>Deskripsi</b></td>
+     <td align="center"><b>Foto</b></td>
+  </tr>
+  <tr>
+    <td valign="center">Dashboard</td>
+    <td valign="center"><img src="./.review/sc_09.PNG?raw=true" width="400"/></td>
+    <td valign="center">Paramater SKPD</td>
+    <td valign="center"><img src="./.review/sc_04.PNG?raw=true" width="400"/></td>
+  </tr>
+  <tr>
+    <td valign="center">SSH & Saldo Awal</td>
+    <td valign="center"><img src="./.review/sc_03.PNG?raw=true" width="400"/></td>
+    <td valign="center">Laporan Mutasi Barang</td>
+    <td valign="center"><img src="./.review/sc_10.PNG?raw=true" width="400"/></td>
+  </tr>
+  <tr>
+    <td valign="center">Form Penerimaan</td>
+    <td valign="center"><img src="./.review/sc_05.PNG?raw=true" width="400"/></td>
+    <td valign="center">BA Penerimaan<</td>
+    <td valign="center"><img src="./.review/sc_06.PNG?raw=true" width="400"/></td>
+  </tr>
+  <tr>
+    <td valign="center">Form Pengeluaran<</td>
+    <td valign="center"><img src="./.review/sc_07.PNG?raw=true" width="400"/></td>
+    <td valign="center">BA Pengeluaran</td>
+    <td valign="center"><img src="./.review/sc_08.PNG?raw=true" width="400"/></td>
+  </tr>
+  <tr>
+    <td valign="center">Stok Akhir Persediaan</td>
+    <td valign="center"><img src="./.review/sc_11.PNG?raw=true" width="400"/></td>
+    <td valign="center"></td>
+    <td valign="center"></td>
+  </tr>
+ </table>
+ 
 
-**Review Hasil Running AutoInputData Mutasi Barang di Aplikasi Persediaan BPKAD HST**
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/01.PNG?raw=true" width="600"/>
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/02.PNG?raw=true" width="600"/>
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/03.PNG?raw=true" width="600"/>
+- **Videos Cara menambahkan ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
 
-**Tool Yang Diperlukan**
-- Download =>> https://download.uipath.com/UiPathStudioCommunity.msi
-- Install dan pilih "Standalone Options" 
-<img src="https://aws1.discourse-cdn.com/uipath/original/4X/b/a/a/baabc282d3daae392748c9ef99cdd4d95ad7ad5d.png" width="420"/>
+- **Videos Running Aplikasi Persediaan** = ...
 
 
-**[Powered By Sys.Dev BPKAD HST.]**
+**[Powered By Sys.Dev BPKAD HST]**
