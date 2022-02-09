@@ -2,7 +2,7 @@
 Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 
 
-**Review Aplikasi Persediaan KAB. HST**
+**# Review Aplikasi Persediaan KAB. HST**
 <table>
   <tr>
     <td align="center"><b>Deskripsi</b></td>
@@ -43,9 +43,9 @@ Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
  </table>
  
 
-- **Videos Cara menambahkan ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
+- **Video Cara menambahkan ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
 
-- **Videos Running Aplikasi Persediaan** = ...
+- **Video Running Aplikasi Persediaan** = ...
 
 
 **[Powered By Sys.Dev BPKAD HST]**
