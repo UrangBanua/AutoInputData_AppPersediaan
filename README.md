@@ -5,10 +5,10 @@ Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 **# Review Aplikasi Persediaan KAB. HST**
 <table>
   <tr>
-    <td align="center"><b>Deskripsi</b></td>
-     <td align="center"><b>Foto</b></td>
-     <td align="center"><b>Deskripsi</b></td>
-     <td align="center"><b>Foto</b></td>
+    <td align="center"><b>Keterangan</b></td>
+     <td align="center"><b>Tampilan</b></td>
+     <td align="center"><b>Keterangan</b></td>
+     <td align="center"><b>Tampilan</b></td>
   </tr>
   <tr>
     <td valign="center">Dashboard</td>
