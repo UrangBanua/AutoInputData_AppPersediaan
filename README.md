@@ -45,7 +45,7 @@ Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 
 - **Video Cara menambahkan kode ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
 
-- **Video Running Aplikasi Persediaan** = ...
+- **Video Review data yang sudah masuk di Aplikasi Persediaan** = https://youtu.be/-83BHfmYgwo
 
 
 **[Powered By Sys.Dev BPKAD HST]**
