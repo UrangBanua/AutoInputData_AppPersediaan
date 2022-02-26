@@ -1,6 +1,17 @@
-================== CONTOH INPUT DATA PERSEDIAAN ===============
-======== MODE CEPAT MENGGUNAKAN DATA YANG SUDAH ADA ========
-=================== UNTUK TAHUN ANGGARAN 2021 =================
-
-
-
+============================= CONTOH INPUT DATA PERSEDIAAN ===========================
+===================== MODE CEPAT MENGGUNAKAN DATA YANG SUDAH ADA ===================== 
+============================== UNTUK TAHUN ANGGARAN 2021 ============================= 
+pertama masuk ke website bpkad hst
+atau lewat google ketik : bpkad hst
+pilih Tahun Anggaran 
+cek Saldo Awal
+masuk ke pengaturan SKPD
+masuk ke menu Form Penerimaan
+Contoh Print BA Penerimaan
+masuk ke menu Form Pemakaian
+Contoh Print BA Pemakaian
+Review data Mutasi
+Masu ke Review Saldo Akhir.
+                                             
+alamat web app bpkad	: https://bpkad.hulusungaitengahkab.go.id/?mode=skpd
+link dokumentasi 	: https://github.com/UrangBanua/AutoInputData_AppPersediaan
