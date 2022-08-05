@@ -42,6 +42,9 @@ Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
   </tr>
  </table>
  
+- **Standard Operational Procedure**
+
+![SOP_Persediaan](https://user-images.githubusercontent.com/58909061/182984533-21e85737-85ce-40a3-8ed9-bd34da4a9f3a.PNG)
 
 - **Video Cara menambahkan kode ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
 
