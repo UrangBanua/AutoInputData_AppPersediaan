@@ -65,7 +65,7 @@ Alamat aplikasi Persediaan : https://bpkad.hulusungaitengahkab.go.id/?mode=skpd
 
 - **CONTOH FORMAT BERITA ACARA REKONSILIASI PERSEDIAAN TAHUN 2022**
 
-  [NAMASKPD_BERITA ACARA REKONSILIASI PERSEDIAAN 2022.xlsx](https://github.com/UrangBanua/AutoInputData_AppPersediaan/files/10028197/NAMASKPD_BERITA.ACARA.REKONSILIASI.PERSEDIAAN.2022.xlsx)
+  [NAMASKPD_BERITA ACARA REKONSILIASI PERSEDIAAN 2022.xlsx](https://github.com/UrangBanua/AutoInputData_AppPersediaan/files/10028799/NAMASKPD_BERITA.ACARA.REKONSILIASI.PERSEDIAAN.2022.xlsx)
 
 
 
