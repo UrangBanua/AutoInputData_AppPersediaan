@@ -47,6 +47,11 @@ Alamat aplikasi Persediaan : https://bpkad.hulusungaitengahkab.go.id/?mode=skpd
 
 ![SOP_Persediaan](https://user-images.githubusercontent.com/58909061/182984533-21e85737-85ce-40a3-8ed9-bd34da4a9f3a.PNG)
 
+- **PERBUB Kebijakan Akuntansi Tahun 2020 HST**
+
+[2020_PERBUB_64_Kebijakan_Akuntansi_Perubahan_ASET_DAN_PERSEDIAAN.pdf](https://github.com/UrangBanua/AutoInputData_AppPersediaan/files/10027515/2020_PERBUB64_KebijakanAkuntansiPerubahan_ASET_DAN_PERSEDIAAN.pdf)
+
+
 - **Video Cara menambahkan kode ssh pada template excel** = https://youtu.be/3MQF5C6pYuI
 
 - **Video Review data yang sudah masuk di Aplikasi Persediaan** = https://youtu.be/-83BHfmYgwo
