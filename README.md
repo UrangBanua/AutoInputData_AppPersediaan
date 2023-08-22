@@ -1,5 +1,5 @@
 # AutoInputData_AppPersediaan
-Automisasi Input Data Excel Mutasi Barang ke Aplikasi Persediaan BPKAD HST
+Automisasi Data Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 
 Alamat aplikasi Persediaan : https://bpkad.hulusungaitengahkab.go.id/?mode=skpd
 
