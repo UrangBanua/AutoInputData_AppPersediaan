@@ -1,7 +1,7 @@
 # AutoInputData_AppPersediaan
 Automisasi Data Mutasi Barang ke Aplikasi Persediaan BPKAD HST
 
-Alamat aplikasi Persediaan : https://bpkad.hulusungaitengahkab.go.id/?mode=skpd
+Alamat aplikasi Persediaan : https://bpkad.hstkab.go.id/?mode=skpd
 
 - **MATERI BIMTEK BPKP Permendagri 47 Tahun 2021 Persediaan**
   
